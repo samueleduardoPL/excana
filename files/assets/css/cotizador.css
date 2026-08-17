@@ -1,0 +1,326 @@
+/*=========================================
+        COTIZADOR DE APARTAMENTOS
+=========================================*/
+
+.apartment-quote{
+    padding:120px 0;
+    background:#f7f8fc;
+}
+
+.apartment-quote__subtitle{
+    margin-top:15px;
+    font-size:18px;
+    color:#6b7280;
+}
+
+.apartment-quote__subtitle strong{
+    color:#c59d5f;
+}
+
+/*=========================
+        TORRES
+==========================*/
+
+.tower-selector{
+
+    display:flex;
+    gap:25px;
+    margin-top:60px;
+    margin-bottom:40px;
+    flex-wrap:wrap;
+
+}
+
+.tower-card{
+
+    flex:1;
+    min-width:260px;
+
+    background:#ffffff;
+
+    border-radius:18px;
+
+    padding:30px;
+
+    cursor:pointer;
+
+    transition:.35s;
+
+    border:2px solid transparent;
+
+    box-shadow:0 15px 35px rgba(0,0,0,.08);
+
+}
+
+.tower-card:hover{
+
+    transform:translateY(-8px);
+
+}
+
+.tower-card.active{
+
+    background:#c59d5f;
+
+    color:#fff;
+
+}
+
+.tower-card span{
+
+    display:block;
+
+    margin-top:15px;
+
+    opacity:.8;
+
+    font-size:15px;
+
+}
+
+.tower-card p{
+
+    margin-top:8px;
+
+    font-size:17px;
+
+    font-weight:600;
+
+}
+
+
+/*=========================
+    TIPOS APARTAMENTO
+==========================*/
+
+.type-selector{
+
+    display:flex;
+
+    gap:20px;
+
+    flex-wrap:wrap;
+
+    margin-bottom:50px;
+
+}
+
+.type-card{
+
+    flex:1;
+
+    min-width:220px;
+
+    background:white;
+
+    padding:25px;
+
+    border-radius:18px;
+
+    text-align:center;
+
+    cursor:pointer;
+
+    transition:.35s;
+
+    border:2px solid #ececec;
+
+}
+
+.type-card:hover{
+
+    transform:translateY(-6px);
+
+    border-color:#c59d5f;
+
+}
+
+.type-card.active{
+    background:#c59d5f;
+    color:#fff;
+    border-color:#c59d5f;
+}
+
+.type-card h5{
+
+    margin-bottom:10px;
+
+    font-size:24px;
+
+}
+
+.type-card p{
+
+    font-size:22px;
+
+    font-weight:bold;
+
+    color:#c59d5f;
+
+}
+
+.type-card.active p{
+
+    color:#fff;
+
+}
+
+.type-card small{
+
+    font-size:15px;
+
+}
+
+/*=========================
+      COTIZADOR
+==========================*/
+
+.quote-box{
+
+    display:grid;
+
+    grid-template-columns:
+
+    repeat(4,1fr);
+
+    gap:25px;
+
+    align-items:end;
+
+}
+
+.quote-input{
+
+    display:flex;
+
+    flex-direction:column;
+
+}
+
+.quote-input label{
+
+    margin-bottom:12px;
+
+    font-weight:700;
+
+    color:#444;
+
+}
+
+.quote-input select{
+
+    height:58px;
+
+    border-radius:12px;
+
+    border:1px solid #ddd;
+
+    padding:0 15px;
+
+    font-size:16px;
+
+    outline:none;
+
+    transition:.3s;
+
+}
+
+.quote-input select:focus{
+
+    border-color:#c59d5f;
+
+}
+
+.price-box{
+
+    text-align:center;
+
+}
+
+.price-box span{
+
+    color:#888;
+
+    display:block;
+
+    margin-bottom:8px;
+
+}
+
+.price-box h2{
+
+    color:#c59d5f;
+
+    font-size:36px;
+
+    margin:0;
+
+    font-weight:700;
+
+}
+
+.quote-btn{
+
+    width:100%;
+
+    height:60px;
+
+    border:none;
+
+    border-radius:12px;
+
+    background:#c59d5f;
+
+    color:white;
+
+    font-size:18px;
+
+    font-weight:700;
+
+    cursor:pointer;
+
+    transition:.35s;
+
+}
+
+.quote-btn:hover{
+
+    background:#2f3640;
+
+}
+
+/*=========================
+        RESPONSIVE
+==========================*/
+
+@media(max-width:1200px){
+
+.quote-box{
+
+grid-template-columns:repeat(2,1fr);
+
+}
+
+}
+
+@media(max-width:768px){
+
+.quote-box{
+
+grid-template-columns:1fr;
+
+}
+
+.tower-selector{
+
+flex-direction:column;
+
+}
+
+.type-selector{
+
+flex-direction:column;
+
+}
+
+}
