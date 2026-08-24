@@ -1,1561 +1,2621 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title> Excelsior Cana </title>
-    <!-- favicons Icons -->
-    <link rel="apple-touch-icon" sizes="180x180" href="" />
-    <link rel="icon" type="image/png" sizes="32x32" href="" />
-    <link rel="icon" type="image/png" sizes="16x16" href="" />
-    <link rel="manifest" href="" />
-    <meta name="description" content="Excelsior Cana Residences" />
 
-    <!-- fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <meta charset="UTF-8">
 
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0">
 
-    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap"
+    <title>Excelsior Cana Residences</title>
+
+    <meta
+        name="description"
+        content="Excelsior Cana Residences - Apartamentos exclusivos en VistaCana, Punta Cana, República Dominicana.">
+
+
+    <!-- =========================================
+         PRELOAD DE IMAGEN PRINCIPAL
+    ========================================== -->
+
+    <link
+        rel="preload"
+        as="image"
+        href="assets/images/backgrounds/VISTA%20ACCESO%20AL%20RESIDENCIAL.png"
+        fetchpriority="high">
+
+
+    <!-- =========================================
+         GOOGLE FONTS
+    ========================================== -->
+
+    <link
+        rel="preconnect"
+        href="https://fonts.googleapis.com">
+
+    <link
+        rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&family=Teko:wght@300;400;500;600;700&display=swap"
         rel="stylesheet">
 
-    <link href="https://fonts.googleapis.com/css2?family=Teko:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="assets/vendors/bootstrap/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="assets/vendors/animate/animate.min.css" />
-    <link rel="stylesheet" href="assets/vendors/animate/custom-animate.css" />
-    <link rel="stylesheet" href="assets/vendors/fontawesome/css/all.min.css" />
-    <link rel="stylesheet" href="assets/vendors/jarallax/jarallax.css" />
-    <link rel="stylesheet" href="assets/vendors/jquery-magnific-popup/jquery.magnific-popup.css" />
-    <link rel="stylesheet" href="assets/vendors/nouislider/nouislider.min.css" />
-    <link rel="stylesheet" href="assets/vendors/nouislider/nouislider.pips.css" />
-    <link rel="stylesheet" href="assets/vendors/odometer/odometer.min.css" />
-    <link rel="stylesheet" href="assets/vendors/swiper/swiper.min.css" />
-    <link rel="stylesheet" href="assets/vendors/alipes-icons/style.css">
-    <link rel="stylesheet" href="assets/vendors/tiny-slider/tiny-slider.min.css" />
-    <link rel="stylesheet" href="assets/vendors/reey-font/stylesheet.css" />
-    <link rel="stylesheet" href="assets/vendors/owl-carousel/owl.carousel.min.css" />
-    <link rel="stylesheet" href="assets/vendors/owl-carousel/owl.theme.default.min.css" />
-    <link rel="stylesheet" href="assets/vendors/bxslider/jquery.bxslider.css" />
-    <link rel="stylesheet" href="assets/vendors/bootstrap-select/css/bootstrap-select.min.css" />
-    <link rel="stylesheet" href="assets/vendors/vegas/vegas.min.css" />
-    <link rel="stylesheet" href="assets/vendors/jquery-ui/jquery-ui.css" />
-    <link rel="stylesheet" href="assets/vendors/timepicker/timePicker.css" />
-    <link rel="stylesheet" href="assets/vendors/nice-select/nice-select.css" />
-    <link rel="stylesheet" href="assets/css/cotizador.css">
+    <!-- =========================================
+         VENDOR CSS
+    ========================================== -->
 
-    <!-- template styles -->
-    <link rel="stylesheet" href="assets/css/alipes.css" />
-    <link rel="stylesheet" href="assets/css/alipes-responsive.css" />
+    <link
+        rel="stylesheet"
+        href="assets/vendors/bootstrap/css/bootstrap.min.css">
+
+    <link
+        rel="stylesheet"
+        href="assets/vendors/animate/animate.min.css">
+
+    <link
+        rel="stylesheet"
+        href="assets/vendors/animate/custom-animate.css">
+
+    <link
+        rel="stylesheet"
+        href="assets/vendors/fontawesome/css/all.min.css">
+
+    <link
+        rel="stylesheet"
+        href="assets/vendors/jarallax/jarallax.css">
+
+    <link
+        rel="stylesheet"
+        href="assets/vendors/jquery-magnific-popup/jquery.magnific-popup.css">
+
+    <link
+        rel="stylesheet"
+        href="assets/vendors/nouislider/nouislider.min.css">
+
+    <link
+        rel="stylesheet"
+        href="assets/vendors/nouislider/nouislider.pips.css">
+
+    <link
+        rel="stylesheet"
+        href="assets/vendors/odometer/odometer.min.css">
+
+    <link
+        rel="stylesheet"
+        href="assets/vendors/swiper/swiper.min.css">
+
+    <link
+        rel="stylesheet"
+        href="assets/vendors/alipes-icons/style.css">
+
+    <link
+        rel="stylesheet"
+        href="assets/vendors/tiny-slider/tiny-slider.min.css">
+
+    <link
+        rel="stylesheet"
+        href="assets/vendors/reey-font/stylesheet.css">
+
+    <link
+        rel="stylesheet"
+        href="assets/vendors/owl-carousel/owl.carousel.min.css">
+
+    <link
+        rel="stylesheet"
+        href="assets/vendors/owl-carousel/owl.theme.default.min.css">
+
+    <link
+        rel="stylesheet"
+        href="assets/vendors/bxslider/jquery.bxslider.css">
+
+    <link
+        rel="stylesheet"
+        href="assets/vendors/bootstrap-select/css/bootstrap-select.min.css">
+
+    <link
+        rel="stylesheet"
+        href="assets/vendors/vegas/vegas.min.css">
+
+    <link
+        rel="stylesheet"
+        href="assets/vendors/jquery-ui/jquery-ui.css">
+
+    <link
+        rel="stylesheet"
+        href="assets/vendors/timepicker/timePicker.css">
+
+    <link
+        rel="stylesheet"
+        href="assets/vendors/nice-select/nice-select.css">
+
+
+    <!-- =========================================
+         TU CSS
+    ========================================== -->
+
+    <link
+        rel="stylesheet"
+        href="assets/css/cotizador.css">
+
+    <link
+        rel="stylesheet"
+        href="assets/css/alipes.css">
+
+    <link
+        rel="stylesheet"
+        href="assets/css/alipes-responsive.css">
+
 </head>
+
 
 <body class="custom-cursor">
 
+
+    <!-- Cursor -->
     <div class="custom-cursor__cursor"></div>
     <div class="custom-cursor__cursor-two"></div>
 
 
-
-
+    <!-- =========================================
+         PRELOADER
+    ========================================== -->
 
     <div class="preloader">
         <div class="preloader__image"></div>
     </div>
-    <!-- /.preloader -->
 
 
     <div class="page-wrapper">
+
+
+        <!-- =========================================
+             HEADER
+        ========================================== -->
+
         <header class="main-header">
+
             <div class="main-header__top">
+
                 <div class="main-header__top-inner">
+
                     <div class="main-header__top-left">
+
                         <div class="main-menu__social">
-                            <!-- <a href="#"><i class="fab fa-twitter"></i></a>
-                            <a href="#"><i class="fab fa-facebook"></i></a> -->
-                            <!-- <a href="#"><i class="fab fa-pinterest-p"></i></a> -->
-                            <a href="https://www.instagram.com/excelsiorcanaresidences/"><i class="fab fa-instagram"></i></a>
+
+                            <a
+                                href="https://www.instagram.com/excelsiorcanaresidences/"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                aria-label="Instagram">
+
+                                <i class="fab fa-instagram"></i>
+
+                            </a>
+
                         </div>
-                        <p class="main-header__top-time">Lunes a Sábado: 8:00 AM - 5:00 PM</p>
+
+
+                        <p class="main-header__top-time">
+                            Lunes a Sábado: 8:00 AM - 5:00 PM
+                        </p>
+
                     </div>
+
+
                     <div class="main-header__top-right">
+
                         <ul class="list-unstyled main-header__contact-list">
+
                             <li>
+
                                 <div class="icon">
                                     <i class="fas fa-map-marker-alt"></i>
                                 </div>
+
                                 <div class="text">
-                                    <p>Vista Cana Calle de la Senda Lotes, Punta Cana, República Dominicana. </p>
+
+                                    <p>
+                                        Vista Cana Calle de la Senda Lotes,
+                                        Punta Cana, República Dominicana.
+                                    </p>
+
                                 </div>
+
                             </li>
+
+
                             <li>
+
                                 <div class="icon">
                                     <i class="fas fa-envelope"></i>
                                 </div>
+
                                 <div class="text">
-                                    <p><a href="mailto:needhelp@company.com">ventasexcelsiorcanaresidences@gmail.com </a></p>
+
+                                    <p>
+
+                                        <a href="mailto:ventasexcelsiorcanaresidences@gmail.com">
+                                            ventasexcelsiorcanaresidences@gmail.com
+                                        </a>
+
+                                    </p>
+
                                 </div>
+
                             </li>
+
                         </ul>
+
                     </div>
+
                 </div>
+
             </div>
+
+
+            <!-- NAV -->
+
             <nav class="main-menu">
+
                 <div class="main-menu__wrapper">
+
                     <div class="main-menu__wrapper-inner">
+
+
                         <div class="main-menu__left">
+
                             <div class="main-menu__logo">
-                                <a href="index.html"><img src="assets/images/resources/excanalogo2.png" alt=""></a>
+
+                                <a href="index.html">
+
+                                    <img
+                                        src="assets/images/resources/excanalogo2.png"
+                                        alt="Excelsior Cana Residences">
+
+                                </a>
+
                             </div>
+
                         </div>
+
+
                         <div class="main-menu__main-menu-box">
-                            <a href="#" class="mobile-nav__toggler"><i class="fa fa-bars"></i></a>
+
+                            <a
+                                href="#"
+                                class="mobile-nav__toggler"
+                                aria-label="Abrir menú">
+
+                                <i class="fa fa-bars"></i>
+
+                            </a>
+
+
                             <ul class="main-menu__list one-page-scroll-menu">
+
                                 <li class="dropdown current megamenu scrollToLink">
-                                    <a href="#home">Inicio </a>
+
+                                    <a href="#home">
+                                        Inicio
+                                    </a>
+
                                 </li>
+
+
                                 <li class="scrollToLink">
-                                    <a href="#about">Proyecto</a>
+
+                                    <a href="#about">
+                                        Proyecto
+                                    </a>
+
                                 </li>
+
+
                                 <li class="scrollToLink">
-                                    <a href="#appartments">Apartamentos</a>
+
+                                    <a href="#appartments">
+                                        Apartamentos
+                                    </a>
+
                                 </li>
-                                 <li class="scrollToLink">
-                                    <a href="#cotizador">Cotizar</a>
-                                </li>
-                                <!-- <li class="scrollToLink">
-                                    <a href="#news">News</a>
-                                </li>
+
+
                                 <li class="scrollToLink">
-                                    <a href="#contact">Contact</a>
-                                </li>  -->
+
+                                    <a href="#cotizador">
+                                        Cotizar
+                                    </a>
+
+                                </li>
+
                             </ul>
+
                         </div>
+
+
                         <div class="main-menu__right">
+
                             <div class="main-menu__search-cart-btn">
-                                <!-- <div class="main-menu__search-cart-box">
-                                    <div class="main-menu__search-box">
-                                        <a href="#" class="main-menu__search search-toggler icon-magnifying-glass"></a>
-                                    </div>
-                                    <div class="main-menu__cart-box">
-                                        <a href="cart.html" class="main-menu__cart icon-shopping-cart"></a>
-                                    </div>
-                                </div> -->
+
                                 <div class="main-menu__btn-box">
-                                    <a href="#contacto" class="thm-btn main-menu__btn">Contáctanos</a>
+
+                                    <a
+                                        href="#contacto"
+                                        class="thm-btn main-menu__btn">
+
+                                        Contáctanos
+
+                                    </a>
+
                                 </div>
+
                             </div>
+
                         </div>
+
+
                     </div>
+
                 </div>
+
             </nav>
+
         </header>
 
+
+        <!-- Sticky Header -->
+
         <div class="stricky-header stricked-menu main-menu">
-            <div class="sticky-header__content"></div><!-- /.sticky-header__content -->
-        </div><!-- /.stricky-header -->
 
-        <!--Main Slider Start-->
-        <section class="main-slider clearfix" id="home">
-            <div class="swiper-container thm-swiper__slider" data-swiper-options='{"slidesPerView": 1, "loop": true,
-                "effect": "fade",
-                "pagination": {
-                "el": "#main-slider-pagination",
-                "type": "bullets",
-                "clickable": true
-                },
-                "navigation": {
-                "nextEl": "#main-slider__swiper-button-next",
-                "prevEl": "#main-slider__swiper-button-prev"
-                },
-                "autoplay": {
-                "delay": 5000
-                }}'>
-                <div class="swiper-wrapper">
-
-                    <div class="swiper-slide">
-                        <div class="image-layer"
-                            style="background-image: url(assets/images/backgrounds/VISTA\ ACCESO\ AL\ RESIDENCIAL.png);"></div>
-                        <!-- /.image-layer -->
-                        <div class="main-slider__overly"></div>
-                        <div class="container">
-                            <div class="row">
-                                <div class="col-xl-12">
-                                    <div class="main-slider__content">
-                                        <h2 class="main-slider__title">EXCELSIOR CANA <br> RESIDENCES</h2>
-                                        <h4 class="main-slider__sub-title"><span>1 Y 2 HAB.</span>Conjunto residencial exclusivo en  VistaCana. </h4>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="swiper-slide">
-                        <div class="image-layer"
-                            style="background-image: url(assets/images/backgrounds/VISTA\ AEREA\ MODULO\ B.png);"></div>
-                        <!-- /.image-layer -->
-                        <div class="main-slider__overly"></div>
-                        <div class="container">
-                            <div class="row">
-                                <div class="col-xl-12">
-                                    <div class="main-slider__content">
-                                        <h2 class="main-slider__title">EXCELSIOR CANA <br> RESIDENCES</h2>
-                                        <h4 class="main-slider__sub-title"><span>1 Y 2 HAB.</span>Conjunto residencial exclusivo en VistaCana.</h4>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="swiper-slide">
-                        <div class="image-layer"
-                            style="background-image: url(assets/images/backgrounds/VISTA\ DE\ CONJUNTO.png);"></div>
-                        <!-- /.image-layer -->
-                        <div class="main-slider__overly"></div>
-                        <div class="container">
-                            <div class="row">
-                                <div class="col-xl-12">
-                                    <div class="main-slider__content">
-                                        <h2 class="main-slider__title">EXCELSIOR CANA <br> RESIDENCES</h2>
-                                        <h4 class="main-slider__sub-title"><span>1 Y 2 HAB.</span>Conjunto residencial exclusivo en VistaCana.</h4>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-
-                </div>
-
-                <!-- If we need navigation buttons -->
-                <div class="main-slider__nav">
-                    <div class="swiper-button-prev" id="main-slider__swiper-button-next">
-                        <i class="icon-left-arrow"></i>
-                    </div>
-                    <div class="swiper-button-next" id="main-slider__swiper-button-prev">
-                        <i class="icon-right-arrow"></i>
-                    </div>
-                </div>
-
-            </div>
-        </section>
-        <!--Main Slider End-->
-
-
-        <!--About One Start-->
-        <section class="about-one" id="about">
-            <div class="about-one__img-two">
-                <img src="assets/images/resources/VISTA DE BALCONES.png" alt="">
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-xl-6">
-                        <div class="about-one__left">
-                            <div class="about-one__img-box wow slideInLeft" data-wow-delay="100ms"
-                                data-wow-duration="2500ms">
-                                <div class="about-one__img">
-                                    <img src="assets/images/resources/VISTA DE BALCONES.png" alt="">
-                                </div>
-                                <div class="about-one__shape-1 shape-mover">
-                                    <img src="assets/images/shapes/about-one-shape-1.png" alt="">
-                                </div>
-                                <div class="about-one__big-text">alipes</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-6">
-                        <div class="about-one__right">
-                            <div class="section-title text-left">
-    <span class="section-title__tagline">Conoce nuestro proyecto</span>
-    <h2 class="section-title__title">Apartamentos de lujo diseñados para tu bienestar</h2>
-                    </div>
-
-                    <p class="about-one__text-1">
-                        Un proyecto residencial que combina diseño, comodidad y una ubicación privilegiada.
-                    </p>
-
-                    <p class="about-one__text-2">
-                        Diseñado para disfrutar de la privacidad, el confort y
-                        la seguridad, en un entorno que reúne piscina, áreas
-                        recreativas, espacios familiares y estacionamientos.
-                    </p>
-
-                    <ul class="about-one__points-list list-unstyled">
-                        <li>
-                            <div class="about-one__points-list-content">
-                                <div class="icon">
-                                    <span class="fa fa-check"></span>
-                                </div>
-                                <div class="text">
-                                    <h3>Seguridad 24/7</h3>
-                                </div>
-                            </div>
-                            <p class="about-one__points-text">
-                                Acceso controlado y vigilancia permanente para tu tranquilidad.
-                            </p>
-                        </li>
-
-                        <li>
-                            <div class="about-one__points-list-content">
-                                <div class="icon">
-                                    <span class="fa fa-check"></span>
-                                </div>
-                                <div class="text">
-                                    <h3>Amenidades Exclusivas</h3>
-                                </div>
-                            </div>
-                            <p class="about-one__points-text">
-                                Piscina, gimnasio, áreas sociales y espacios diseñados para disfrutar cada día.
-                            </p>
-                        </li>
-                    </ul>
-
-                    <div class="about-one__btn-box">
-                        <div class="about-one__shape-2 float-bob-x">
-                            <img src="assets/images/shapes/about-one-shape-2.png" alt="">
-                        </div>
-                        <a href="contact.html" class="about-one__btn thm-btn">Conoce más</a>
-                    </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!--About One Start-->
-
-        
-
-        <!--Why Choose One Start-->
-        <section class="why-choose-one">
-            <div class="why-choose-one__bg" data-jarallax data-speed="0.2" data-imgPosition="50% 0%"
-                style="background-image: url(assets/images/backgrounds/AEREA\ DE\ TERRAZAS.png);"></div>
-            <div class="why-choose-one__shape-2 wow slideInLeft" data-wow-delay="100ms" data-wow-duration="2500ms">
-                <!-- <img src="assets/images/shapes/why-choose-one-shape-2.png" alt=""> -->
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-xl-6 col-lg-6">
-                        <div class="why-choose-one__left">
-                            <div class="why-choose-one__inner">
-                                <div class="why-choose-one__video-link">
-                                    <a href="https://www.youtube.com/watch?v=bUxPFIgKtnU" class="video-popup">
-                                        <div class="why-choose-one__video-icon">
-                                            <span class="fa fa-play"></span>
-                                            <i class="ripple"></i>
-                                        </div>
-                                    </a>
-                                    <div class="why-choose-one__shape-1 float-bob-x">
-                                        <img src="assets/images/shapes/why-choose-one-shape-1.png" alt="">
-                                    </div>
-                                </div>
-                                <h3 class="why-choose-one__title">RECORRE <br> CANA RESIDENCES
-                                    </h3>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-6 col-lg-6">
-                        <div class="why-choose-one__right">
-                            <div class="why-choose-one__points-box">
-                                <ul class="why-choose-one__points-list list-unstyled">
-                                    <li>
-                                        <div class="icon">
-                                            <span class="fa fa-check"></span>
-                                        </div>
-                                        <div class="text">
-                                            <p>Seguridad 24/7</p>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="icon">
-                                            <span class="fa fa-check"></span>
-                                        </div>
-                                        <div class="text">
-                                            <p>Piscina</p>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="icon">
-                                            <span class="fa fa-check"></span>
-                                        </div>
-                                        <div class="text">
-                                            <p>Parqueos privados</p>
-                                        </div>
-                                    </li>
-                                </ul>
-                                <ul class="why-choose-one__points-list why-choose-one__points-list-2 list-unstyled">
-                                    <li>
-                                        <div class="icon">
-                                            <span class="fa fa-check"></span>
-                                        </div>
-                                        <div class="text">
-                                            <p>Área infantil</p>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="icon">
-                                            <span class="fa fa-check"></span>
-                                        </div>
-                                        <div class="text">
-                                            <p>Ubicacion</p>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="icon">
-                                            <span class="fa fa-check"></span>
-                                        </div>
-                                        <div class="text">
-                                            <p>Valorizacion</p>
-                                        </div>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!--Why Choose One Start-->
-
-        <!--Brand One Start-->
-        <section class="brand-one">
-            <div class="brand-one__wrap">
-                <div class="brand-one__shape-1 float-bob-y">
-                    <img src="assets/images/shapes/brand-one-shape-1.png" alt="">
-                </div>
-                <div class="brand-one__shape-2 float-bob-x">
-                    <img src="assets/images/shapes/brand-one-shape-2.png" alt="">
-                </div>
-                
-                </div>
-            </div>
-        </section>
-        <!--Brand One End-->
-
-        <!--Apartment One Start-->
-        <section class="apartment-one" id="appartments">
-            <div class="apartment-one__bg"
-                style="background-image: url(assets/images/backgrounds/VISTA\ DE\ BALCONES.png);"></div>
-            <div class="container">
-                <div class="section-title text-center">
-                    <span class="section-title__tagline">Espacios diseñados para ti</span>
-                    <h2 class="section-title__title">Descubre nuestros apartamentos</h2>
-                </div>
-                <div class="row">
-                    <!--Apartment One Single Start-->
-                    <div class="col-xl-3 col-lg-6 col-md-6">
-                        <div class="apartment-one__single">
-                            <div class="apartment-one__img-box">
-                                <div class="apartment-one__img">
-                                    <img src="assets/images/resources/PLANTA APARTAMENTO TIPO A.png" alt="">
-                                </div>
-                                <div class="apartment-one__content">
-                                    <div class="apartment-one__title-box">
-                                        <h3 class="apartment-one__title"><a href="">TIPO
-                                                 A </a></h3>
-                                    </div>
-                                    <div class="apartment-one__arrow">
-                                        <a href="apartment-details-1.html"><span class="icon-right-arrow"></span></a>
-                                    </div>
-                                </div>
-                                <div class="apartment-one__btn-box">
-                                    <a href="apartment-details-1.html" class="thm-btn apartment-one__btn">81.67 m2</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!--Apartment One Single End-->
-                    <!--Apartment One Single Start-->
-                    <div class="col-xl-3 col-lg-6 col-md-6">
-                        <div class="apartment-one__single">
-                            <div class="apartment-one__img-box">
-                                <div class="apartment-one__img">
-                                    <img src="assets/images/resources/PLANTA APARTAMENTO TIPO B.png" alt="">
-                                </div>
-                                <div class="apartment-one__content">
-                                    <div class="apartment-one__title-box">
-                                        <h3 class="apartment-one__title"><a href="">TIPO B
-                                                </a></h3>
-                                    </div>
-                                    <div class="apartment-one__arrow">
-                                        <a href="apartment-details-b.html"><span class="icon-right-arrow"></span></a>
-                                    </div>
-                                </div>
-                                <div class="apartment-one__btn-box">
-                                    <a href="apartment-details-b.html" class="thm-btn apartment-one__btn">80.49 m2</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!--Apartment One Single End-->
-                    <!--Apartment One Single Start-->
-                    <div class="col-xl-3 col-lg-6 col-md-6">
-                        <div class="apartment-one__single">
-                            <div class="apartment-one__img-box">
-                                <div class="apartment-one__img">
-                                    <img src="assets/images/resources/PLANTA APARTAMENTO TIPO C.png" alt="">
-                                </div>
-                                <div class="apartment-one__content">
-                                    <div class="apartment-one__title-box">
-                                        <h3 class="apartment-one__title"><a href=""> TIPO C
-                                                </a></h3>
-                                    </div>
-                                    <div class="apartment-one__arrow">
-                                        <a href="apartment-details-c.html"><span class="icon-right-arrow"></span></a>
-                                    </div>
-                                </div>
-                                <div class="apartment-one__btn-box">
-                                    <a href="apartment-details-c.html" class="thm-btn apartment-one__btn">56.50 m2</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!--Apartment One Single End-->
-                    <!--Apartment One Single Start-->
-                    <div class="col-xl-3 col-lg-6 col-md-6">
-                        <div class="apartment-one__single">
-                            <div class="apartment-one__img-box">
-                                <div class="apartment-one__img">
-                                    <img src="assets/images/resources/PLANTA APARTAMENTO TIPO D.png" alt="">
-                                </div>
-                                <div class="apartment-one__content">
-                                    <div class="apartment-one__title-box">
-                                        <h3 class="apartment-one__title"><a href="">TIPO D</a></h3>
-                                    </div>
-                                    <div class="apartment-one__arrow">
-                                        <a href="apartment-details-d.html"><span class="icon-right-arrow"></span></a>
-                                    </div>
-                                </div>
-                                <div class="apartment-one__btn-box">
-                                    <a href="apartment-details-d.html" class="thm-btn apartment-one__btn">81.67 m2</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!--Apartment One Single End-->
-                </div>
-            </div>
-        </section>
-        <!--Apartment One Start-->
-
-        <!-- =========================================
-     COTIZADOR DE APARTAMENTOS
-========================================== -->
-
-<section class="apartment-quote" id="cotizador">
-
-    <div class="container">
-
-        <!-- Encabezado -->
-        <div class="section-title text-center">
-
-            <span class="section-title__tagline">
-                Encuentra tu apartamento ideal
-            </span>
-
-            <h2 class="section-title__title">
-                Explora nuestras unidades
-            </h2>
-
-            <p class="apartment-quote__subtitle">
-                Selecciona el módulo, tipo y apartamento para conocer
-                sus características y disponibilidad.
-            </p>
+            <div class="sticky-header__content"></div>
 
         </div>
 
 
-        <div class="quote-configurator">
+
+        <!-- =========================================
+             HERO
+        ========================================== -->
+
+        <section
+            class="main-slider clearfix"
+            id="home">
 
 
-            <!-- =====================================
-                 PANEL IZQUIERDO
-            ====================================== -->
+            <div
+                class="swiper-container thm-swiper__slider"
 
-            <div class="quote-configurator__controls">
+                data-swiper-options='{
+                    "slidesPerView": 1,
+                    "loop": true,
+                    "effect": "fade",
+
+                    "pagination": {
+                        "el": "#main-slider-pagination",
+                        "type": "bullets",
+                        "clickable": true
+                    },
+
+                    "navigation": {
+                        "nextEl": "#main-slider__swiper-button-next",
+                        "prevEl": "#main-slider__swiper-button-prev"
+                    },
+
+                    "autoplay": {
+                        "delay": 5000
+                    }
+                }'>
 
 
-                <!-- PASO 1 -->
+                <div class="swiper-wrapper">
 
-                <div class="quote-step">
 
-                    <div class="quote-step__header">
+                    <!-- SLIDE 1 -->
 
-                        <span class="quote-step__number">
-                            01
-                        </span>
+                    <div class="swiper-slide">
 
-                        <div>
-                            <small>Selecciona</small>
-                            <h4>Módulo</h4>
+                        <div
+                            class="image-layer"
+                            style="background-image: url('assets/images/backgrounds/VISTA ACCESO AL RESIDENCIAL.png');">
+                        </div>
+
+
+                        <div class="main-slider__overly"></div>
+
+
+                        <div class="container">
+
+                            <div class="row">
+
+                                <div class="col-xl-12">
+
+                                    <div class="main-slider__content">
+
+                                        <h2 class="main-slider__title">
+
+                                            EXCELSIOR CANA
+                                            <br>
+                                            RESIDENCES
+
+                                        </h2>
+
+
+                                        <h4 class="main-slider__sub-title">
+
+                                            <span>
+                                                1 Y 2 HAB.
+                                            </span>
+
+                                            Conjunto residencial exclusivo en VistaCana.
+
+                                        </h4>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
                         </div>
 
                     </div>
 
 
-                    <div class="module-selector">
 
-                        <button
-                            type="button"
-                            class="module-option active"
-                            data-module="A">
+                    <!-- SLIDE 2 -->
 
-                            <span>Módulo</span>
-                            <strong>A</strong>
+                    <div class="swiper-slide">
 
-                        </button>
+                        <div
+                            class="image-layer"
+                            style="background-image: url('assets/images/backgrounds/VISTA AEREA MODULO B.png');">
+                        </div>
 
 
-                        <button
-                            type="button"
-                            class="module-option"
-                            data-module="B">
+                        <div class="main-slider__overly"></div>
 
-                            <span>Módulo</span>
-                            <strong>B</strong>
 
-                        </button>
+                        <div class="container">
+
+                            <div class="row">
+
+                                <div class="col-xl-12">
+
+                                    <div class="main-slider__content">
+
+                                        <h2 class="main-slider__title">
+
+                                            EXCELSIOR CANA
+                                            <br>
+                                            RESIDENCES
+
+                                        </h2>
+
+
+                                        <h4 class="main-slider__sub-title">
+
+                                            <span>
+                                                1 Y 2 HAB.
+                                            </span>
+
+                                            Conjunto residencial exclusivo en VistaCana.
+
+                                        </h4>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <!-- SLIDE 3 -->
+
+                    <div class="swiper-slide">
+
+                        <div
+                            class="image-layer"
+                            style="background-image: url('assets/images/backgrounds/VISTA DE CONJUNTO.png');">
+                        </div>
+
+
+                        <div class="main-slider__overly"></div>
+
+
+                        <div class="container">
+
+                            <div class="row">
+
+                                <div class="col-xl-12">
+
+                                    <div class="main-slider__content">
+
+                                        <h2 class="main-slider__title">
+
+                                            EXCELSIOR CANA
+                                            <br>
+                                            RESIDENCES
+
+                                        </h2>
+
+
+                                        <h4 class="main-slider__sub-title">
+
+                                            <span>
+                                                1 Y 2 HAB.
+                                            </span>
+
+                                            Conjunto residencial exclusivo en VistaCana.
+
+                                        </h4>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
 
                     </div>
 
                 </div>
 
 
+                <!-- Slider Controls -->
 
-                <!-- PASO 2 -->
+                <div class="main-slider__nav">
 
-                <div class="quote-step">
+                    <div
+                        class="swiper-button-prev"
+                        id="main-slider__swiper-button-next">
 
-                    <div class="quote-step__header">
-
-                        <span class="quote-step__number">
-                            02
-                        </span>
-
-                        <div>
-                            <small>Selecciona</small>
-                            <h4>Tipo de apartamento</h4>
-                        </div>
+                        <i class="icon-left-arrow"></i>
 
                     </div>
 
 
-                    <div class="quote-type-selector">
+                    <div
+                        class="swiper-button-next"
+                        id="main-slider__swiper-button-prev">
 
-
-                        <button
-                            type="button"
-                            class="quote-type active"
-                            data-type="A">
-
-                            <strong>Tipo A</strong>
-
-                            <span>81.67 m²</span>
-
-                            <small>
-                                2 habitaciones
-                            </small>
-
-                        </button>
-
-
-                        <button
-                            type="button"
-                            class="quote-type"
-                            data-type="B">
-
-                            <strong>Tipo B</strong>
-
-                            <span>80.49 m²</span>
-
-                            <small>
-                                1 habitación + estudio
-                            </small>
-
-                        </button>
-
-
-                        <button
-                            type="button"
-                            class="quote-type"
-                            data-type="C">
-
-                            <strong>Tipo C</strong>
-
-                            <span>56.50 m²</span>
-
-                            <small>
-                                1 habitación
-                            </small>
-
-                        </button>
-
-
-                        <button
-                            type="button"
-                            class="quote-type"
-                            data-type="D">
-
-                            <strong>Tipo D</strong>
-
-                            <span>81.67 m²</span>
-
-                            <small>
-                                1 habitación + estudio
-                            </small>
-
-                        </button>
+                        <i class="icon-right-arrow"></i>
 
                     </div>
 
                 </div>
 
+            </div>
+
+        </section>
 
 
-                <!-- PASO 3 -->
 
-                <div class="quote-step quote-step--last">
+        <!-- =========================================
+             ABOUT
+        ========================================== -->
 
-                    <div class="quote-step__header">
-
-                        <span class="quote-step__number">
-                            03
-                        </span>
-
-                        <div>
-                            <small>Selecciona</small>
-                            <h4>Unidad</h4>
-                        </div>
-
-                    </div>
+        <section
+            class="about-one"
+            id="about">
 
 
-                    <div class="quote-apartment-select">
+            <div class="about-one__img-two">
 
-                        <label for="quoteApartmentSelect">
-                            Apartamento disponible
-                        </label>
-
-                        <select id="quoteApartmentSelect">
-                        </select>
-
-                    </div>
-
-                </div>
-
+                <img
+                    src="assets/images/resources/VISTA DE BALCONES.png"
+                    loading="lazy"
+                    decoding="async"
+                    alt="Vista de balcones de Excelsior Cana Residences">
 
             </div>
 
 
+            <div class="container">
 
-            <!-- =====================================
-                 PANEL DERECHO
-            ====================================== -->
-
-            <div class="quote-result">
+                <div class="row">
 
 
-                <div class="quote-result__top">
+                    <div class="col-xl-6">
 
-                    <div>
+                        <div class="about-one__left">
 
-                        <span class="quote-result__eyebrow">
-                            UNIDAD SELECCIONADA
-                        </span>
+                            <div
+                                class="about-one__img-box wow slideInLeft"
+                                data-wow-delay="100ms"
+                                data-wow-duration="2500ms">
 
-                        <h3 id="quoteApartmentName">
-                            A-101
-                        </h3>
+
+                                <div class="about-one__img">
+
+                                    <img
+                                        src="assets/images/resources/VISTA DE BALCONES.png"
+                                        loading="lazy"
+                                        decoding="async"
+                                        alt="Vista exterior de Excelsior Cana Residences">
+
+                                </div>
+
+
+                                <div class="about-one__shape-1 shape-mover">
+
+                                    <img
+                                        src="assets/images/shapes/about-one-shape-1.png"
+                                        loading="lazy"
+                                        decoding="async"
+                                        alt="">
+
+                                </div>
+
+
+                                <div class="about-one__big-text">
+                                    Excelsior
+                                </div>
+
+                            </div>
+
+                        </div>
 
                     </div>
 
 
-                    <span
-                        id="quoteAvailability"
-                        class="quote-availability">
+                    <div class="col-xl-6">
 
-                        Disponible
+                        <div class="about-one__right">
 
+
+                            <div class="section-title text-left">
+
+                                <span class="section-title__tagline">
+                                    Conoce nuestro proyecto
+                                </span>
+
+                                <h2 class="section-title__title">
+                                    Apartamentos de lujo diseñados para tu bienestar
+                                </h2>
+
+                            </div>
+
+
+                            <p class="about-one__text-1">
+
+                                Un proyecto residencial que combina diseño,
+                                comodidad y una ubicación privilegiada.
+
+                            </p>
+
+
+                            <p class="about-one__text-2">
+
+                                Diseñado para disfrutar de la privacidad,
+                                el confort y la seguridad, en un entorno que
+                                reúne piscina, áreas recreativas, espacios
+                                familiares y estacionamientos.
+
+                            </p>
+
+
+                            <ul class="about-one__points-list list-unstyled">
+
+
+                                <li>
+
+                                    <div class="about-one__points-list-content">
+
+                                        <div class="icon">
+                                            <span class="fa fa-check"></span>
+                                        </div>
+
+                                        <div class="text">
+                                            <h3>Seguridad 24/7</h3>
+                                        </div>
+
+                                    </div>
+
+                                    <p class="about-one__points-text">
+
+                                        Acceso controlado y vigilancia permanente
+                                        para tu tranquilidad.
+
+                                    </p>
+
+                                </li>
+
+
+                                <li>
+
+                                    <div class="about-one__points-list-content">
+
+                                        <div class="icon">
+                                            <span class="fa fa-check"></span>
+                                        </div>
+
+                                        <div class="text">
+                                            <h3>Amenidades Exclusivas</h3>
+                                        </div>
+
+                                    </div>
+
+                                    <p class="about-one__points-text">
+
+                                        Piscina, gimnasio, áreas sociales y espacios
+                                        diseñados para disfrutar cada día.
+
+                                    </p>
+
+                                </li>
+
+                            </ul>
+
+
+                            <div class="about-one__btn-box">
+
+                                <div class="about-one__shape-2 float-bob-x">
+
+                                    <img
+                                        src="assets/images/shapes/about-one-shape-2.png"
+                                        loading="lazy"
+                                        decoding="async"
+                                        alt="">
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =========================================
+             WHY CHOOSE
+        ========================================== -->
+
+        <section class="why-choose-one">
+
+
+            <div
+                class="why-choose-one__bg"
+                data-jarallax
+                data-speed="0.2"
+                data-imgPosition="50% 0%"
+                style="background-image: url('assets/images/backgrounds/AEREA DE TERRAZAS.png');">
+            </div>
+
+
+            <div class="container">
+
+                <div class="row">
+
+
+                    <div class="col-xl-6 col-lg-6">
+
+                        <div class="why-choose-one__left">
+
+                            <div class="why-choose-one__inner">
+
+
+                                <div class="why-choose-one__video-link">
+
+                                    <a
+                                        href="https://www.youtube.com/watch?v=bUxPFIgKtnU"
+                                        class="video-popup">
+
+                                        <div class="why-choose-one__video-icon">
+
+                                            <span class="fa fa-play"></span>
+
+                                            <i class="ripple"></i>
+
+                                        </div>
+
+                                    </a>
+
+
+                                    <div class="why-choose-one__shape-1 float-bob-x">
+
+                                        <img
+                                            src="assets/images/shapes/why-choose-one-shape-1.png"
+                                            loading="lazy"
+                                            decoding="async"
+                                            alt="">
+
+                                    </div>
+
+                                </div>
+
+
+                                <h3 class="why-choose-one__title">
+
+                                    RECORRE
+                                    <br>
+                                    CANA RESIDENCES
+
+                                </h3>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="col-xl-6 col-lg-6">
+
+                        <div class="why-choose-one__right">
+
+                            <div class="why-choose-one__points-box">
+
+
+                                <ul class="why-choose-one__points-list list-unstyled">
+
+                                    <li>
+
+                                        <div class="icon">
+                                            <span class="fa fa-check"></span>
+                                        </div>
+
+                                        <div class="text">
+                                            <p>Seguridad 24/7</p>
+                                        </div>
+
+                                    </li>
+
+
+                                    <li>
+
+                                        <div class="icon">
+                                            <span class="fa fa-check"></span>
+                                        </div>
+
+                                        <div class="text">
+                                            <p>Piscina</p>
+                                        </div>
+
+                                    </li>
+
+
+                                    <li>
+
+                                        <div class="icon">
+                                            <span class="fa fa-check"></span>
+                                        </div>
+
+                                        <div class="text">
+                                            <p>Parqueos privados</p>
+                                        </div>
+
+                                    </li>
+
+                                </ul>
+
+
+                                <ul class="why-choose-one__points-list why-choose-one__points-list-2 list-unstyled">
+
+                                    <li>
+
+                                        <div class="icon">
+                                            <span class="fa fa-check"></span>
+                                        </div>
+
+                                        <div class="text">
+                                            <p>Área infantil</p>
+                                        </div>
+
+                                    </li>
+
+
+                                    <li>
+
+                                        <div class="icon">
+                                            <span class="fa fa-check"></span>
+                                        </div>
+
+                                        <div class="text">
+                                            <p>Ubicación</p>
+                                        </div>
+
+                                    </li>
+
+
+                                    <li>
+
+                                        <div class="icon">
+                                            <span class="fa fa-check"></span>
+                                        </div>
+
+                                        <div class="text">
+                                            <p>Valorización</p>
+                                        </div>
+
+                                    </li>
+
+                                </ul>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =========================================
+             APARTAMENTOS
+        ========================================== -->
+
+        <section
+            class="apartment-one"
+            id="appartments">
+
+
+            <div
+                class="apartment-one__bg"
+                style="background-image: url('assets/images/backgrounds/VISTA DE BALCONES.png');">
+            </div>
+
+
+            <div class="container">
+
+
+                <div class="section-title text-center">
+
+                    <span class="section-title__tagline">
+                        Espacios diseñados para ti
                     </span>
+
+                    <h2 class="section-title__title">
+                        Descubre nuestros apartamentos
+                    </h2>
+
+                </div>
+
+
+                <div class="row">
+
+
+                    <!-- TIPO A -->
+
+                    <div class="col-xl-3 col-lg-6 col-md-6">
+
+                        <div class="apartment-one__single">
+
+                            <div class="apartment-one__img-box">
+
+                                <div class="apartment-one__img">
+
+                                    <img
+                                        src="assets/images/resources/PLANTA APARTAMENTO TIPO A.png"
+                                        loading="lazy"
+                                        decoding="async"
+                                        alt="Plano Apartamento Tipo A">
+
+                                </div>
+
+
+                                <div class="apartment-one__content">
+
+                                    <div class="apartment-one__title-box">
+
+                                        <h3 class="apartment-one__title">
+
+                                            <a href="apartment-details-1.html">
+                                                TIPO A
+                                            </a>
+
+                                        </h3>
+
+                                    </div>
+
+
+                                    <div class="apartment-one__arrow">
+
+                                        <a href="apartment-details-1.html">
+
+                                            <span class="icon-right-arrow"></span>
+
+                                        </a>
+
+                                    </div>
+
+                                </div>
+
+
+                                <div class="apartment-one__btn-box">
+
+                                    <a
+                                        href="apartment-details-1.html"
+                                        class="thm-btn apartment-one__btn">
+
+                                        81.67 m²
+
+                                    </a>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <!-- TIPO B -->
+
+                    <div class="col-xl-3 col-lg-6 col-md-6">
+
+                        <div class="apartment-one__single">
+
+                            <div class="apartment-one__img-box">
+
+                                <div class="apartment-one__img">
+
+                                    <img
+                                        src="assets/images/resources/PLANTA APARTAMENTO TIPO B.png"
+                                        loading="lazy"
+                                        decoding="async"
+                                        alt="Plano Apartamento Tipo B">
+
+                                </div>
+
+
+                                <div class="apartment-one__content">
+
+                                    <div class="apartment-one__title-box">
+
+                                        <h3 class="apartment-one__title">
+
+                                            <a href="apartment-details-b.html">
+                                                TIPO B
+                                            </a>
+
+                                        </h3>
+
+                                    </div>
+
+
+                                    <div class="apartment-one__arrow">
+
+                                        <a href="apartment-details-b.html">
+
+                                            <span class="icon-right-arrow"></span>
+
+                                        </a>
+
+                                    </div>
+
+                                </div>
+
+
+                                <div class="apartment-one__btn-box">
+
+                                    <a
+                                        href="apartment-details-b.html"
+                                        class="thm-btn apartment-one__btn">
+
+                                        80.49 m²
+
+                                    </a>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <!-- TIPO C -->
+
+                    <div class="col-xl-3 col-lg-6 col-md-6">
+
+                        <div class="apartment-one__single">
+
+                            <div class="apartment-one__img-box">
+
+                                <div class="apartment-one__img">
+
+                                    <img
+                                        src="assets/images/resources/PLANTA APARTAMENTO TIPO C.png"
+                                        loading="lazy"
+                                        decoding="async"
+                                        alt="Plano Apartamento Tipo C">
+
+                                </div>
+
+
+                                <div class="apartment-one__content">
+
+                                    <div class="apartment-one__title-box">
+
+                                        <h3 class="apartment-one__title">
+
+                                            <a href="apartment-details-c.html">
+                                                TIPO C
+                                            </a>
+
+                                        </h3>
+
+                                    </div>
+
+
+                                    <div class="apartment-one__arrow">
+
+                                        <a href="apartment-details-c.html">
+
+                                            <span class="icon-right-arrow"></span>
+
+                                        </a>
+
+                                    </div>
+
+                                </div>
+
+
+                                <div class="apartment-one__btn-box">
+
+                                    <a
+                                        href="apartment-details-c.html"
+                                        class="thm-btn apartment-one__btn">
+
+                                        56.50 m²
+
+                                    </a>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <!-- TIPO D -->
+
+                    <div class="col-xl-3 col-lg-6 col-md-6">
+
+                        <div class="apartment-one__single">
+
+                            <div class="apartment-one__img-box">
+
+                                <div class="apartment-one__img">
+
+                                    <img
+                                        src="assets/images/resources/PLANTA APARTAMENTO TIPO D.png"
+                                        loading="lazy"
+                                        decoding="async"
+                                        alt="Plano Apartamento Tipo D">
+
+                                </div>
+
+
+                                <div class="apartment-one__content">
+
+                                    <div class="apartment-one__title-box">
+
+                                        <h3 class="apartment-one__title">
+
+                                            <a href="apartment-details-d.html">
+                                                TIPO D
+                                            </a>
+
+                                        </h3>
+
+                                    </div>
+
+
+                                    <div class="apartment-one__arrow">
+
+                                        <a href="apartment-details-d.html">
+
+                                            <span class="icon-right-arrow"></span>
+
+                                        </a>
+
+                                    </div>
+
+                                </div>
+
+
+                                <div class="apartment-one__btn-box">
+
+                                    <a
+                                        href="apartment-details-d.html"
+                                        class="thm-btn apartment-one__btn">
+
+                                        81.67 m²
+
+                                    </a>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =========================================
+             COTIZADOR
+        ========================================== -->
+
+        <section
+            class="apartment-quote"
+            id="cotizador">
+
+
+            <div class="container">
+
+
+                <div class="section-title text-center">
+
+                    <span class="section-title__tagline">
+                        Encuentra tu apartamento ideal
+                    </span>
+
+                    <h2 class="section-title__title">
+                        Explora nuestras unidades
+                    </h2>
+
+                    <p class="apartment-quote__subtitle">
+
+                        Selecciona el módulo, tipo y apartamento
+                        para conocer sus características y disponibilidad.
+
+                    </p>
 
                 </div>
 
 
 
-                <!-- Características -->
-
-                <div class="quote-specs">
+                <div class="quote-configurator">
 
 
-                    <div class="quote-spec">
+                    <!-- PANEL IZQUIERDO -->
 
-                        <span>
-                            Área
-                        </span>
+                    <div class="quote-configurator__controls">
 
-                        <strong id="quoteArea">
-                            81.67 m²
-                        </strong>
+
+                        <!-- PASO 1 -->
+
+                        <div class="quote-step">
+
+                            <div class="quote-step__header">
+
+                                <span class="quote-step__number">
+                                    01
+                                </span>
+
+                                <div>
+
+                                    <small>Selecciona</small>
+
+                                    <h4>Módulo</h4>
+
+                                </div>
+
+                            </div>
+
+
+                            <div class="module-selector">
+
+
+                                <button
+                                    type="button"
+                                    class="module-option active"
+                                    data-module="A">
+
+                                    <span>Módulo</span>
+
+                                    <strong>A</strong>
+
+                                </button>
+
+
+                                <button
+                                    type="button"
+                                    class="module-option"
+                                    data-module="B">
+
+                                    <span>Módulo</span>
+
+                                    <strong>B</strong>
+
+                                </button>
+
+                            </div>
+
+                        </div>
+
+
+
+                        <!-- PASO 2 -->
+
+                        <div class="quote-step">
+
+
+                            <div class="quote-step__header">
+
+                                <span class="quote-step__number">
+                                    02
+                                </span>
+
+                                <div>
+
+                                    <small>Selecciona</small>
+
+                                    <h4>
+                                        Tipo de apartamento
+                                    </h4>
+
+                                </div>
+
+                            </div>
+
+
+                            <div class="quote-type-selector">
+
+
+                                <button
+                                    type="button"
+                                    class="quote-type active"
+                                    data-type="A">
+
+                                    <strong>Tipo A</strong>
+
+                                    <span>
+                                        81.67 m²
+                                    </span>
+
+                                    <small>
+                                        2 habitaciones
+                                    </small>
+
+                                </button>
+
+
+                                <button
+                                    type="button"
+                                    class="quote-type"
+                                    data-type="B">
+
+                                    <strong>Tipo B</strong>
+
+                                    <span>
+                                        80.49 m²
+                                    </span>
+
+                                    <small>
+                                        1 habitación + estudio
+                                    </small>
+
+                                </button>
+
+
+                                <button
+                                    type="button"
+                                    class="quote-type"
+                                    data-type="C">
+
+                                    <strong>Tipo C</strong>
+
+                                    <span>
+                                        56.50 m²
+                                    </span>
+
+                                    <small>
+                                        1 habitación
+                                    </small>
+
+                                </button>
+
+
+                                <button
+                                    type="button"
+                                    class="quote-type"
+                                    data-type="D">
+
+                                    <strong>Tipo D</strong>
+
+                                    <span>
+                                        81.67 m²
+                                    </span>
+
+                                    <small>
+                                        1 habitación + estudio
+                                    </small>
+
+                                </button>
+
+                            </div>
+
+                        </div>
+
+
+
+                        <!-- PASO 3 -->
+
+                        <div class="quote-step quote-step--last">
+
+
+                            <div class="quote-step__header">
+
+                                <span class="quote-step__number">
+                                    03
+                                </span>
+
+                                <div>
+
+                                    <small>Selecciona</small>
+
+                                    <h4>Unidad</h4>
+
+                                </div>
+
+                            </div>
+
+
+                            <div class="quote-apartment-select">
+
+                                <label for="quoteApartmentSelect">
+
+                                    Apartamento disponible
+
+                                </label>
+
+
+                                <select id="quoteApartmentSelect">
+                                </select>
+
+                            </div>
+
+                        </div>
 
                     </div>
 
 
-                    <div class="quote-spec">
 
-                        <span>
-                            Nivel
-                        </span>
+                    <!-- PANEL DERECHO -->
 
-                        <strong id="quoteLevel">
-                            1er nivel
-                        </strong>
+                    <div class="quote-result">
+
+
+                        <div class="quote-result__top">
+
+
+                            <div>
+
+                                <span class="quote-result__eyebrow">
+
+                                    UNIDAD SELECCIONADA
+
+                                </span>
+
+
+                                <h3 id="quoteApartmentName">
+                                    A-101
+                                </h3>
+
+                            </div>
+
+
+                            <span
+                                id="quoteAvailability"
+                                class="quote-availability">
+
+                                Disponible
+
+                            </span>
+
+                        </div>
+
+
+
+                        <div class="quote-specs">
+
+
+                            <div class="quote-spec">
+
+                                <span>Área</span>
+
+                                <strong id="quoteArea">
+                                    81.67 m²
+                                </strong>
+
+                            </div>
+
+
+                            <div class="quote-spec">
+
+                                <span>Nivel</span>
+
+                                <strong id="quoteLevel">
+                                    1er nivel
+                                </strong>
+
+                            </div>
+
+
+                            <div class="quote-spec">
+
+                                <span>Habitaciones</span>
+
+                                <strong id="quoteBedrooms">
+                                    2
+                                </strong>
+
+                            </div>
+
+
+                            <div class="quote-spec">
+
+                                <span>Baños</span>
+
+                                <strong id="quoteBathrooms">
+                                    2.5
+                                </strong>
+
+                            </div>
+
+
+                            <div class="quote-spec">
+
+                                <span>Parqueo</span>
+
+                                <strong id="quoteParking">
+                                    1
+                                </strong>
+
+                            </div>
+
+
+                            <div class="quote-spec">
+
+                                <span>Tipo</span>
+
+                                <strong id="quoteType">
+                                    A
+                                </strong>
+
+                            </div>
+
+                        </div>
+
+
+
+                        <div class="quote-extra">
+
+                            <span>
+                                Características adicionales
+                            </span>
+
+                            <strong id="quoteExtra">
+                                Patio trasero de 30.96 m²
+                            </strong>
+
+                        </div>
+
+
+
+                        <div class="quote-price">
+
+                            <span class="quote-price__label">
+                                Precio
+                            </span>
+
+
+                            <span
+                                id="quotePrice"
+                                class="precio-bloqueado quote-price__value"
+                                data-precio="US$206,283.50"
+                                data-apartamento="A-101"
+                                onclick="abrirRegistroPrecio(this)">
+
+                                <i class="fa fa-lock"></i>
+
+                                Ver precio
+
+                            </span>
+
+                        </div>
+
+
+
+                        <a
+                            href="#contacto"
+                            class="thm-btn quote-result__btn">
+
+                            Solicitar información
+
+                        </a>
+
+
+                        <p class="quote-result__note">
+
+                            Los precios y disponibilidad pueden estar sujetos
+                            a cambios. Contáctanos para recibir información actualizada.
+
+                        </p>
 
                     </div>
-
-
-                    <div class="quote-spec">
-
-                        <span>
-                            Habitaciones
-                        </span>
-
-                        <strong id="quoteBedrooms">
-                            2
-                        </strong>
-
-                    </div>
-
-
-                    <div class="quote-spec">
-
-                        <span>
-                            Baños
-                        </span>
-
-                        <strong id="quoteBathrooms">
-                            2.5
-                        </strong>
-
-                    </div>
-
-
-                    <div class="quote-spec">
-
-                        <span>
-                            Parqueo
-                        </span>
-
-                        <strong id="quoteParking">
-                            1
-                        </strong>
-
-                    </div>
-
-
-                    <div class="quote-spec">
-
-                        <span>
-                            Tipo
-                        </span>
-
-                        <strong id="quoteType">
-                            A
-                        </strong>
-
-                    </div>
-
 
                 </div>
 
+            </div>
+
+        </section>
 
 
-                <!-- Área exterior -->
 
-                <div class="quote-extra">
+        <!-- =========================================
+             CONTACTO
+        ========================================== -->
 
-                    <span>
-                        Características adicionales
-                    </span>
+        <section
+            class="contact-one"
+            id="contacto">
 
-                    <strong id="quoteExtra">
-                        Patio trasero de 30.96 m²
-                    </strong>
+
+            <div class="container">
+
+                <div class="row">
+
+
+                    <div class="col-xl-7 col-lg-8">
+
+                        <div class="contact-one__left">
+
+
+                            <div class="section-title text-left">
+
+                                <span class="section-title__tagline">
+                                    Conócenos
+                                </span>
+
+                                <h2 class="section-title__title">
+                                    Recibe asesoría personalizada
+                                </h2>
+
+                            </div>
+
+
+                            <div class="contact-one__person">
+
+
+                                <div class="contact-one__person-info">
+
+
+                                    <div class="contact-one__person-img">
+
+                                        <img
+                                            src="assets/images/resources/excanalogo2.png"
+                                            loading="lazy"
+                                            decoding="async"
+                                            alt="Excelsior Cana Residences">
+
+                                    </div>
+
+
+                                    <div class="contact-one__person-content">
+
+                                        <h3 class="contact-one__person-name">
+                                            Equipo de Ventas
+                                        </h3>
+
+                                        <p class="contact-one__person-sub-title">
+                                            Excelsior Cana Residences
+                                        </p>
+
+                                    </div>
+
+                                </div>
+
+
+                                <div class="contact-one__person-text">
+
+                                    <p>
+
+                                        Nuestro equipo está disponible para brindarte
+                                        toda la información sobre el proyecto,
+                                        resolver tus dudas y ayudarte durante todo
+                                        el proceso de compra.
+
+                                    </p>
+
+                                </div>
+
+                            </div>
+
+
+
+                            <ul class="contact-one__points list-unstyled">
+
+
+                                <li>
+
+                                    <div class="icon">
+
+                                        <span class="fas fa-phone-alt"></span>
+
+                                    </div>
+
+
+                                    <div class="content">
+
+                                        <p>
+                                            Llámanos
+                                        </p>
+
+
+                                        <h4>
+
+                                            <a href="tel:+18095551234">
+                                                +1 (809) 555-1234
+                                            </a>
+
+                                        </h4>
+
+                                    </div>
+
+                                </li>
+
+
+                                <li>
+
+                                    <div class="icon">
+
+                                        <span class="fas fa-envelope"></span>
+
+                                    </div>
+
+
+                                    <div class="content">
+
+                                        <p>
+                                            Correo electrónico
+                                        </p>
+
+
+                                        <h4>
+
+                                            <a href="mailto:ventasexcelsiorcanaresidences@gmail.com">
+
+                                                ventasexcelsiorcanaresidences@gmail.com
+
+                                            </a>
+
+                                        </h4>
+
+                                    </div>
+
+                                </li>
+
+                            </ul>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <!-- FORMULARIO -->
+
+                    <div class="col-xl-5 col-lg-4">
+
+                        <div class="contact-one__right">
+
+
+                            <div
+                                class="contact-one__form-box wow slideInRight"
+                                data-wow-delay="100ms"
+                                data-wow-duration="2500ms">
+
+
+                                <div
+                                    class="contact-form-bg"
+                                    style="background-image: url('assets/images/resources/VISTA DE BALCONES.png');">
+                                </div>
+
+
+                                <div class="section-title text-left">
+
+                                    <span class="section-title__tagline">
+                                        Solicita información
+                                    </span>
+
+                                    <h2 class="section-title__title">
+                                        Contáctanos
+                                    </h2>
+
+                                </div>
+
+
+                                <form
+                                    action="assets/inc/sendemail.php"
+                                    class="contact-one__form contact-one-validated"
+                                    novalidate>
+
+
+                                    <div class="row">
+
+
+                                        <div class="col-xl-12">
+
+                                            <div class="contact-one__input-box">
+
+                                                <input
+                                                    type="text"
+                                                    placeholder="Nombre completo"
+                                                    name="name">
+
+                                            </div>
+
+                                        </div>
+
+
+                                        <div class="col-xl-12">
+
+                                            <div class="contact-one__input-box">
+
+                                                <input
+                                                    type="text"
+                                                    placeholder="Documento de Identidad"
+                                                    name="document">
+
+                                            </div>
+
+                                        </div>
+
+
+                                        <div class="col-xl-12">
+
+                                            <div class="contact-one__input-box">
+
+                                                <input
+                                                    type="email"
+                                                    placeholder="Correo electrónico"
+                                                    name="email">
+
+                                            </div>
+
+                                        </div>
+
+
+                                        <div class="col-xl-12">
+
+                                            <div class="contact-one__input-box">
+
+                                                <input
+                                                    type="tel"
+                                                    placeholder="Número de teléfono"
+                                                    name="phone">
+
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+
+
+                                    <div class="row">
+
+                                        <div class="col-xl-12">
+
+
+                                            <div class="contact-one__input-box text-message-box">
+
+                                                <textarea
+                                                    name="message"
+                                                    placeholder="Escribe tu mensaje"></textarea>
+
+                                            </div>
+
+
+                                            <button
+                                                type="submit"
+                                                class="thm-btn contact-one__btn">
+
+                                                Solicitar información
+
+                                            </button>
+
+                                        </div>
+
+                                    </div>
+
+                                </form>
+
+                            </div>
+
+                        </div>
+
+                    </div>
 
                 </div>
 
+            </div>
+
+        </section>
 
 
-                <!-- Precio -->
 
-                <div class="quote-price">
+        <!-- =========================================
+             GOOGLE MAP
+        ========================================== -->
 
-                    <span class="quote-price__label">
-                        Precio
-                    </span>
+        <section class="google-map">
+
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1890.2828190220946!2d-68.41940626162035!3d18.638596837158133!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8ea89358ab77444d%3A0x70f0bb99aaf210d9!2sVistacana!5e0!3m2!1ses!2sdo!4v1785451320356!5m2!1ses!2sdo"
+                class="google-map__one"
+                allowfullscreen
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+                title="Ubicación de Excelsior Cana Residences">
+            </iframe>
+
+        </section>
 
 
-                    <span
-                        id="quotePrice"
-                        class="precio-bloqueado quote-price__value"
-                        data-precio="US$206,283.50"
-                        data-apartamento="A-101"
-                        onclick="abrirRegistroPrecio(this)">
 
-                        <i class="fa fa-lock"></i>
-                        Ver precio
+        <!-- =========================================
+             FOOTER
+        ========================================== -->
 
-                    </span>
+        <footer class="site-footer">
+
+
+            <div class="site-footer__shape-1 float-bob-x">
+
+                <img
+                    src="assets/images/shapes/site-footer-shape-1.png"
+                    loading="lazy"
+                    decoding="async"
+                    alt="">
+
+            </div>
+
+
+            <div class="container">
+
+                <div class="site-footer__inner">
+
+
+                    <div class="site-footer__top">
+
+                        <div class="row">
+
+
+                            <!-- LOGO -->
+
+                            <div class="col-xl-2 col-lg-2 col-md-6 wow fadeInUp">
+
+                                <div class="footer-widget__column footer-widget__about">
+
+                                    <div class="footer-widget__logo">
+
+                                        <a href="index.html">
+
+                                            <img
+                                                src="assets/images/resources/excanalogo3.png"
+                                                loading="lazy"
+                                                decoding="async"
+                                                alt="Excelsior Cana Residences">
+
+                                        </a>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+
+
+                            <!-- NAVEGACIÓN -->
+
+                            <div class="col-xl-4 col-lg-4 col-md-6 wow fadeInUp">
+
+                                <div class="footer-widget__column footer-widget__explore">
+
+
+                                    <div class="footer-widget__title-box">
+
+                                        <h3 class="footer-widget__title">
+                                            Navegación
+                                        </h3>
+
+                                    </div>
+
+
+                                    <div class="footer-widget__explore-list-box">
+
+                                        <ul class="footer-widget__explore-list list-unstyled">
+
+                                            <li>
+                                                <a href="#home">Inicio</a>
+                                            </li>
+
+                                            <li>
+                                                <a href="#about">Proyecto</a>
+                                            </li>
+
+                                            <li>
+                                                <a href="#appartments">Apartamentos</a>
+                                            </li>
+
+                                            <li>
+                                                <a href="#cotizador">Cotizar</a>
+                                            </li>
+
+                                            <li>
+                                                <a href="#contacto">Contacto</a>
+                                            </li>
+
+                                        </ul>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+
+
+                            <!-- CONTACTO -->
+
+                            <div class="col-xl-3 col-lg-3 col-md-6 wow fadeInUp">
+
+                                <div class="footer-widget__column footer-widget__contact">
+
+
+                                    <div class="footer-widget__title-box">
+
+                                        <h3 class="footer-widget__title">
+                                            Contacto
+                                        </h3>
+
+                                    </div>
+
+
+                                    <p class="footer-widget__contact-text">
+
+                                        Punta Cana,
+                                        República Dominicana
+
+                                    </p>
+
+
+                                    <ul class="footer-widget__contact-list list-unstyled">
+
+
+                                        <li>
+
+                                            <div class="icon">
+
+                                                <span class="fas fa-envelope"></span>
+
+                                            </div>
+
+
+                                            <div class="text">
+
+                                                <p>
+
+                                                    <a href="mailto:ventasexcelsiorcanaresidences@gmail.com">
+
+                                                        ventasexcelsiorcanaresidences@gmail.com
+
+                                                    </a>
+
+                                                </p>
+
+                                            </div>
+
+                                        </li>
+
+
+                                        <li>
+
+                                            <div class="icon">
+
+                                                <span class="icon-telephone"></span>
+
+                                            </div>
+
+
+                                            <div class="text">
+
+                                                <p>
+
+                                                    <a href="tel:+18095551234">
+
+                                                        +1 (809) 555-1234
+
+                                                    </a>
+
+                                                </p>
+
+                                            </div>
+
+                                        </li>
+
+                                    </ul>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <div class="site-footer__bottom">
+
+                        <div class="site-footer__bottom-inner">
+
+
+                            <div class="site-footer__bottom-left">
+
+                                <p class="site-footer__bottom-text">
+
+                                    © 2026 Excelsior Cana Residences.
+                                    Todos los derechos reservados.
+
+                                </p>
+
+                            </div>
+
+
+                            <div class="site-footer__bottom-right">
+
+                                <div class="site-footer__social">
+
+                                    <a
+                                        href="https://www.instagram.com/excelsiorcanaresidences/"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        aria-label="Instagram">
+
+                                        <i class="fab fa-instagram"></i>
+
+                                    </a>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
 
                 </div>
 
+            </div>
 
-                <!-- CTA -->
-
-                <a
-                    href="#contacto"
-                    class="thm-btn quote-result__btn">
-
-                    Solicitar información
-
-                </a>
+        </footer>
 
 
-                <p class="quote-result__note">
 
-                    Los precios y disponibilidad pueden estar sujetos
-                    a cambios. Contáctanos para recibir información actualizada.
+        <!-- =========================================
+             MODAL PRECIOS
+        ========================================== -->
+
+        <div
+            id="modal-precios"
+            class="modal-precios">
+
+
+            <div class="modal-precios__contenido">
+
+
+                <button
+                    type="button"
+                    class="modal-precios__cerrar"
+                    onclick="cerrarRegistroPrecio()">
+
+                    &times;
+
+                </button>
+
+
+                <span class="modal-precios__tagline">
+                    PRECIOS Y DISPONIBILIDAD
+                </span>
+
+
+                <h3 class="modal-precios__titulo">
+                    Conoce nuestros precios
+                </h3>
+
+
+                <p class="modal-precios__texto">
+
+                    Completa tus datos para consultar los precios
+                    y disponibilidad de nuestros apartamentos.
 
                 </p>
 
 
-            </div>
+
+                <!-- FORMULARIO -->
+
+                <form
+                    id="form-registro-precios"
+                    autocomplete="off">
 
 
-        </div>
+                    <div class="modal-precios__input">
 
-    </div>
+                        <input
+                            type="text"
+                            id="lead-nombre"
+                            name="nombre"
+                            placeholder="Nombre completo"
+                            autocomplete="off"
+                            required>
 
-</section>
+                    </div>
 
-<!-- =========================================
-     FIN COTIZADOR
-========================================== -->
 
-        <!-- Contacto -->
-<section class="contact-one" id="contacto">
-    <div class="container">
-        <div class="row">
+                    <div class="modal-precios__input">
 
-            <!-- Información -->
-            <div class="col-xl-7 col-lg-8">
-                <div class="contact-one__left">
+                        <input
+                            type="email"
+                            id="lead-email"
+                            name="email"
+                            placeholder="Correo electrónico"
+                            autocomplete="off"
+                            required>
 
-                    <div class="section-title text-left">
-                        <span class="section-title__tagline">Conócenos</span>
-                        <h2 class="section-title__title">
-                            Recibe asesoría personalizada
+                    </div>
+
+
+                    <div class="modal-precios__input">
+
+                        <input
+                            type="tel"
+                            id="lead-telefono"
+                            name="telefono"
+                            placeholder="Teléfono / WhatsApp"
+                            autocomplete="off"
+                            required>
+
+                    </div>
+
+
+                    <div class="modal-precios__input">
+
+                        <input
+                            type="text"
+                            id="lead-cedula"
+                            name="cedula"
+                            placeholder="Cédula"
+                            autocomplete="off"
+                            required>
+
+                    </div>
+
+
+                    <input
+                        type="hidden"
+                        id="lead-apartamento"
+                        name="apartamento">
+
+
+                    <button
+                        type="submit"
+                        class="thm-btn modal-precios__boton">
+
+                        Ver precios
+
+                    </button>
+
+
+                    <p class="modal-precios__privacidad">
+
+                        Tus datos serán utilizados únicamente para brindarte
+                        información sobre Excelsior Cana Residences y sus
+                        apartamentos disponibles.
+
+                    </p>
+
+                </form>
+
+
+
+                <!-- CONFIRMACIÓN -->
+
+                <div
+                    id="confirmacion-precio"
+                    class="confirmacion-precio">
+
+
+                    <div class="confirmacion-precio__icono">
+
+                        <i class="fa fa-check"></i>
+
+                    </div>
+
+
+                    <span class="modal-precios__tagline">
+                        REGISTRO COMPLETADO
+                    </span>
+
+
+                    <h3 class="modal-precios__titulo">
+                        ¡Gracias por registrarte!
+                    </h3>
+
+
+                    <p class="confirmacion-precio__texto">
+
+                        Ya puedes consultar los precios y disponibilidad
+                        de nuestros apartamentos.
+
+                    </p>
+
+
+                    <div class="confirmacion-precio__apartamento">
+
+                        <span>
+                            Apartamento consultado
+                        </span>
+
+                        <h4 id="confirmacion-apartamento">
+                            Apartamento
+                        </h4>
+
+                    </div>
+
+
+                    <div class="confirmacion-precio__precio">
+
+                        <span>
+                            Precio
+                        </span>
+
+                        <h2 id="confirmacion-precio-valor">
+                            US$0.00
                         </h2>
-                    </div>
-
-                    <div class="contact-one__person">
-
-                        <div class="contact-one__person-info">
-
-                            <div class="contact-one__person-img">
-                                <img src="assets/images/resources/excanalogo2.png"
-                                    alt="Asesor inmobiliario">
-                            </div>
-
-                            <div class="contact-one__person-content">
-                                <h3 class="contact-one__person-name">
-                                    Equipo de Ventas
-                                </h3>
-
-                                <p class="contact-one__person-sub-title">
-                                    Excelsior Cana Residences
-                                </p>
-                            </div>
-
-                        </div>
-
-                        <div class="contact-one__person-text">
-                            <p>
-                                Nuestro equipo está disponible para 
-                                <br>brindarte toda la información
-                                sobre el proyecto, <br>resolver tus dudas y ayudarte durante todo el
-                                proceso de compra.
-                            </p>
-                        </div>
 
                     </div>
 
-                    <ul class="contact-one__points list-unstyled">
 
-                        <li>
-                            <div class="icon">
-                                <span class="fas fa-phone-alt"></span>
-                            </div>
+                    <button
+                        type="button"
+                        class="thm-btn confirmacion-precio__boton"
+                        onclick="cerrarConfirmacionPrecio()">
 
-                            <div class="content">
-                                <p>Llámanos</p>
-                                <h4>
-                                    <a href="tel:+18095551234">
-                                        +1 (809) 555-1234
-                                    </a>
-                                </h4>
-                            </div>
-                        </li>
+                        Ver otros apartamentos
 
-                        <li>
-                            <div class="icon">
-                                <span class="fas fa-envelope"></span>
-                            </div>
-
-                            <div class="content">
-                                <p>Correo electrónico</p>
-                                <h4>
-                                    <a href="mailto:ventasexcelsiorcanaresidences@gmail.com">
-                                        ventasexcelsiorcanaresidences@gmail.com
-                                    </a>
-                                </h4>
-                            </div>
-                        </li>
-
-                    </ul>
+                    </button>
 
                 </div>
-            </div>
 
-            <!-- Formulario -->
-            <div class="col-xl-5 col-lg-4">
-                <div class="contact-one__right">
-
-                    <div class="contact-one__form-box wow slideInRight"
-                        data-wow-delay="100ms"
-                        data-wow-duration="2500ms">
-
-                        <div class="contact-form-bg"
-                            style="background-image:url(assets/images/resources/VISTA\ DE\ BALCONES.png);">
-                        </div>
-
-                        <div class="section-title text-left">
-                            <span class="section-title__tagline">
-                                Solicita información
-                            </span>
-
-                            <h2 class="section-title__title">
-                                Contáctanos
-                            </h2>
-                        </div>
-
-                        <form action="assets/inc/sendemail.php"
-                            class="contact-one__form contact-one-validated"
-                            novalidate>
-
-                            <div class="row">
-
-                                <div class="col-xl-12">
-                                    <div class="contact-one__input-box">
-                                        <input
-                                            type="text"
-                                            placeholder="Nombre completo"
-                                            name="name">
-                                    </div>
-                                </div>
-
-                                <div class="col-xl-12">
-                                    <div class="contact-one__input-box">
-                                        <input
-                                            type="text"
-                                            placeholder="Documento de Identidad"
-                                            name="name">
-                                    </div>
-                                </div>
-
-                                <div class="col-xl-12">
-                                    <div class="contact-one__input-box">
-                                        <input
-                                            type="email"
-                                            placeholder="Correo electrónico"
-                                            name="email">
-                                    </div>
-                                </div>
-
-                                <div class="col-xl-12">
-                                    <div class="contact-one__input-box">
-                                        <input
-                                            type="email"
-                                            placeholder="Número de teléfono"
-                                            name="phone">
-                                    </div>
-                                </div>
-
-                            </div>
-
-                            <div class="row">
-
-                                <div class="col-xl-12">
-
-                                    <div class="contact-one__input-box text-message-box">
-                                        <textarea
-                                            name="message"
-                                            placeholder="Escribe tu mensaje"></textarea>
-                                    </div>
-
-                                    <button
-                                        type="submit"
-                                        class="thm-btn contact-one__btn">
-                                        Solicitar información
-                                    </button>
-
-                                </div>
-
-                            </div>
-
-                        </form>
-
-                    </div>
-
-                </div>
             </div>
 
         </div>
+
+
     </div>
-</section>
-<!-- Contacto -->
-
-<section class="google-map">
-    <iframe
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1890.2828190220946!2d-68.41940626162035!3d18.638596837158133!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8ea89358ab77444d%3A0x70f0bb99aaf210d9!2sVistacana!5e0!3m2!1ses!2sdo!4v1785451320356!5m2!1ses!2sdo" 
-        class="google-map__one"
-        allowfullscreen
-        loading="lazy">
-    </iframe>
-</section>
-
-        <!--Site Footer Start-->
-    <footer class="site-footer">
-    <div class="site-footer__shape-1 float-bob-x">
-        <img src="assets/images/shapes/site-footer-shape-1.png" alt="">
-    </div>
-
-    <div class="container">
-        <div class="site-footer__inner">
-            <div class="site-footer__top">
-                <div class="row">
-
-                    <!-- Logo -->
-                    <div class="col-xl-2 col-lg-2 col-md-6 wow fadeInUp" data-wow-delay="100ms">
-                        <div class="footer-widget__column footer-widget__about">
-                            <div class="footer-widget__logo">
-                                <a href="index.html">
-                                    <img src="assets/images/resources/excanalogo3.png" style="padding-right: 50%;" alt="Residencial Excana">
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Navegación -->
-                    <div class="col-xl-4 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="200ms">
-                        <div class="footer-widget__column footer-widget__explore">
-                            <div class="footer-widget__title-box">
-                                <h3 class="footer-widget__title">Navegación</h3>
-                            </div>
-
-                            <div class="footer-widget__explore-list-box">
-                                <ul class="footer-widget__explore-list list-unstyled">
-                                    <li><a href="#inicio">Inicio</a></li>
-                                    <li><a href="#proyecto">Proyecto</a></li>
-                                    <li><a href="#apartamentos">Apartamentos</a></li>
-                                    <li><a href="#cotizar">Cotizar</a></li>
-                                </ul>
-
-                                <!-- <ul class="footer-widget__explore-list list-unstyled">
-                                    <li><a href="#planos">Planos</a></li>
-                                    <li><a href="#ubicacion">Ubicación</a></li>
-                                    <li><a href="#contacto">Contacto</a></li>
-                                    <li><a href="#">Política de Privacidad</a></li>
-                                </ul> -->
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Contacto -->
-                    <div class="col-xl-3 col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="300ms">
-                        <div class="footer-widget__column footer-widget__contact">
-                            <div class="footer-widget__title-box">
-                                <h3 class="footer-widget__title">Contacto</h3>
-                            </div>
-
-                            <p class="footer-widget__contact-text">
-                                Punta Cana, República Dominicana
-                            </p>
-
-                            <ul class="footer-widget__contact-list list-unstyled">
-                                <li>
-                                    <div class="icon">
-                                        <span class="fas fa-envelope"></span>
-                                    </div>
-                                    <div class="text">
-                                        <p>
-                                            <a href="mailto:ventasexcelsiorcanaresidences@gmail.com">
-                                                ventasexcelsiorcanaresidences@gmail.com
-                                            </a>
-                                        </p>
-                                    </div>
-                                </li>
-
-                                <li>
-                                    <div class="icon">
-                                        <span class="icon-telephone"></span>
-                                    </div>
-                                    <div class="text">
-                                        <p>
-                                            <a href="tel:+18095551234">
-                                                +1 (809) 555-1234
-                                            </a>
-                                        </p>
-                                    </div>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-
-                    <!-- Boletín -->
-                    <!-- <div class="col-xl-3 col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="400ms">
-                        <div class="footer-widget__column footer-widget__newsletter">
-                            <div class="footer-widget__title-box">
-                                <h3 class="footer-widget__title">Mantente informado</h3>
-                            </div>
-
-                            <form class="footer-widget__email-box">
-                                <div class="footer-widget__email-input-box">
-                                    <input type="email"
-                                           placeholder="Correo electrónico"
-                                           name="email">
-                                </div>
-
-                                <button type="submit"
-                                    class="footer-widget__subscribe-btn thm-btn">
-                                    Suscribirme
-                                </button>
-                            </form>
-                        </div>
-                    </div> -->
-
-                </div>
-            </div>
-
-            <div class="site-footer__bottom">
-                <div class="site-footer__bottom-inner">
-
-                    <div class="site-footer__bottom-left">
-                        <p class="site-footer__bottom-text">
-                            © 2026 Residencial Excana. Todos los derechos reservados.
-                        </p>
-                    </div>
-
-                    <div class="site-footer__bottom-right">
-                        <div class="site-footer__social">
-                            <!-- <a href="#"><i class="fab fa-facebook"></i></a> -->
-                            <a href="https://www.instagram.com/excelsiorcanaresidences/"><i class="fab fa-instagram"></i></a>
-                            <!-- <a href="#"><i class="fab fa-youtube"></i></a>
-                            <a href="#"><i class="fab fa-whatsapp"></i></a> -->
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-
-        </div>
-    </div>
-</footer>
-
-<!-- =========================================
-     MODAL PARA DESBLOQUEAR PRECIOS
-========================================== -->
-
-<div id="modal-precios" class="modal-precios">
-
-    <div class="modal-precios__contenido">
-
-        <button
-            type="button"
-            class="modal-precios__cerrar"
-            onclick="cerrarRegistroPrecio()">
-            &times;
-        </button>
-
-        <span class="modal-precios__tagline">
-            PRECIOS Y DISPONIBILIDAD
-        </span>
-
-        <h3 class="modal-precios__titulo">
-            Conoce nuestros precios
-        </h3>
-
-        <p class="modal-precios__texto">
-            Completa tus datos para consultar los precios
-            y disponibilidad de nuestros apartamentos.
-        </p>
-
-
-        <!-- FORMULARIO -->
-
-        <form id="form-registro-precios" autocomplete="off">
-
-            <div class="modal-precios__input">
-                <input
-                    type="text"
-                    id="lead-nombre"
-                    name="nombre"
-                    placeholder="Nombre completo"
-                    autocomplete="off"
-                    required>
-            </div>
-
-            <div class="modal-precios__input">
-                <input
-                    type="email"
-                    id="lead-email"
-                    name="email"
-                    placeholder="Correo electrónico"
-                    autocomplete="off"
-                    required>
-            </div>
-
-            <div class="modal-precios__input">
-                <input
-                    type="tel"
-                    id="lead-telefono"
-                    name="telefono"
-                    placeholder="Teléfono / WhatsApp"
-                    autocomplete="off"
-                    required>
-            </div>
-
-            <div class="modal-precios__input">
-                <input
-                    type="text"
-                    id="lead-cedula"
-                    name="cedula"
-                    placeholder="Cédula"
-                    autocomplete="off"
-                    required>
-            </div>
-
-
-            <!-- Apartamento consultado -->
-
-            <input
-                type="hidden"
-                id="lead-apartamento"
-                name="apartamento">
-
-
-            <button
-                type="submit"
-                class="thm-btn modal-precios__boton">
-
-                Ver precios
-
-            </button>
-
-
-            <p class="modal-precios__privacidad">
-                Tus datos serán utilizados únicamente para brindarte información
-                sobre Excelsior Cana Residences y sus apartamentos disponibles.
-            </p>
-
-        </form>
+    <!-- /.page-wrapper -->
 
 
 
-        <!-- =========================================
-             CONFIRMACIÓN
-        ========================================== -->
+    <!-- =========================================
+         MOBILE NAV
+    ========================================== -->
 
-        <div id="confirmacion-precio" class="confirmacion-precio">
+    <div class="mobile-nav__wrapper">
 
-            <div class="confirmacion-precio__icono">
-                <i class="fa fa-check"></i>
-            </div>
+        <div class="mobile-nav__overlay mobile-nav__toggler"></div>
 
-            <span class="modal-precios__tagline">
-                REGISTRO COMPLETADO
+
+        <div class="mobile-nav__content">
+
+
+            <span class="mobile-nav__close mobile-nav__toggler">
+
+                <i class="fa fa-times"></i>
+
             </span>
 
-            <h3 class="modal-precios__titulo">
-                ¡Gracias por registrarte!
-            </h3>
 
-            <p class="confirmacion-precio__texto">
-                Ya puedes consultar los precios y disponibilidad
-                de nuestros apartamentos.
-            </p>
+            <div class="logo-box">
 
+                <a
+                    href="#home"
+                    aria-label="Inicio">
 
-            <div class="confirmacion-precio__apartamento">
+                    <img
+                        src="assets/images/resources/excanalogo3.png"
+                        loading="lazy"
+                        decoding="async"
+                        alt="Excelsior Cana Residences">
 
-                <span>
-                    Apartamento consultado
-                </span>
-
-                <h4 id="confirmacion-apartamento">
-                    Apartamento
-                </h4>
+                </a>
 
             </div>
 
 
-            <div class="confirmacion-precio__precio">
+            <div class="mobile-nav__container"></div>
 
-                <span>
-                    Precio
-                </span>
 
-                <h2 id="confirmacion-precio-valor">
-                    US$0.00
-                </h2>
+            <ul class="mobile-nav__contact list-unstyled">
+
+
+                <li>
+
+                    <i class="fa fa-envelope"></i>
+
+                    <a href="mailto:ventasexcelsiorcanaresidences@gmail.com">
+
+                        ventasexcelsiorcanaresidences@gmail.com
+
+                    </a>
+
+                </li>
+
+
+                <li>
+
+                    <i class="fa fa-phone-alt"></i>
+
+                    <a href="tel:+18095551234">
+
+                        +1 (809) 555-1234
+
+                    </a>
+
+                </li>
+
+            </ul>
+
+
+            <div class="mobile-nav__top">
+
+                <div class="mobile-nav__social">
+
+
+                    <a
+                        href="https://www.instagram.com/excelsiorcanaresidences/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label="Instagram">
+
+                        <i class="fab fa-instagram"></i>
+
+                    </a>
+
+                </div>
 
             </div>
-
-
-            <button
-                type="button"
-                class="thm-btn confirmacion-precio__boton"
-                onclick="cerrarConfirmacionPrecio()">
-
-                Ver otros apartamentos
-
-            </button>
 
         </div>
 
     </div>
 
-</div>
-
-<!-- FIN MODAL PRECIOS -->
 
 
-    </div><!-- /.page-wrapper -->
+    <!-- Scroll Top -->
+
+    <a
+        href="#"
+        data-target="html"
+        class="scroll-to-target scroll-to-top">
+
+        <i class="icon-up-arrow"></i>
+
+    </a>
 
 
-    <!-- Menú móvil -->
-<div class="mobile-nav__wrapper">
-    <div class="mobile-nav__overlay mobile-nav__toggler"></div>
 
-    <div class="mobile-nav__content">
-
-        <span class="mobile-nav__close mobile-nav__toggler">
-            <i class="fa fa-times"></i>
-        </span>
-
-        <!-- Logo -->
-        <div class="logo-box">
-            <a href="#inicio" aria-label="Inicio">
-                <img src="assets/images/resources/excanalogo3.png"
-                     alt="Residencial Excana">
-            </a>
-        </div>
-
-        <!-- Menú (se genera automáticamente) -->
-        <div class="mobile-nav__container"></div>
-
-        <!-- Información de contacto -->
-        <ul class="mobile-nav__contact list-unstyled">
-
-            <li>
-                <i class="fa fa-envelope"></i>
-                <a href="ventasexcelsiorcanaresidences@gmail.com">
-                    ventasexcelsiorcanaresidences@gmail.com
-                </a>
-            </li>
-
-            <li>
-                <i class="fa fa-phone-alt"></i>
-                <a href="tel:+18095551234">
-                    +1 (809) 555-1234
-                </a>
-            </li>
-
-        </ul>
-
-        <!-- Redes sociales -->
-        <div class="mobile-nav__top">
-            <div class="mobile-nav__social">
-
-                <a href="#" aria-label="Facebook">
-                    <i class="fab fa-facebook-f"></i>
-                </a>
-
-                <a href="#" aria-label="Instagram">
-                    <i class="fab fa-instagram"></i>
-                </a>
-
-                <a href="#" aria-label="WhatsApp">
-                    <i class="fab fa-whatsapp"></i>
-                </a>
-
-            </div>
-        </div>
-
-    </div>
-</div>
-<!-- /.mobile-nav__wrapper -->
-
-    <div class="search-popup">
-        <div class="search-popup__overlay search-toggler"></div>
-        <!-- /.search-popup__overlay -->
-        <div class="search-popup__content">
-            <form action="#">
-                <label for="search" class="sr-only">search here</label><!-- /.sr-only -->
-                <input type="text" id="search" placeholder="Search Here..." />
-                <button type="submit" aria-label="search submit" class="thm-btn">
-                    <i class="icon-magnifying-glass"></i>
-                </button>
-            </form>
-        </div>
-        <!-- /.search-popup__content -->
-    </div>
-    <!-- /.search-popup -->
-
-    <a href="#" data-target="html" class="scroll-to-target scroll-to-top"><i class="icon-up-arrow"></i></a>
-
+    <!-- =========================================
+         JAVASCRIPT
+    ========================================== -->
 
     <script src="assets/vendors/jquery/jquery-3.6.0.min.js"></script>
+
     <script src="assets/vendors/bootstrap/js/bootstrap.bundle.min.js"></script>
+
     <script src="assets/vendors/jarallax/jarallax.min.js"></script>
+
     <script src="assets/vendors/jquery-ajaxchimp/jquery.ajaxchimp.min.js"></script>
+
     <script src="assets/vendors/jquery-appear/jquery.appear.min.js"></script>
+
     <script src="assets/vendors/jquery-circle-progress/jquery.circle-progress.min.js"></script>
+
     <script src="assets/vendors/jquery-magnific-popup/jquery.magnific-popup.min.js"></script>
+
     <script src="assets/vendors/jquery-validate/jquery.validate.min.js"></script>
+
     <script src="assets/vendors/nouislider/nouislider.min.js"></script>
+
     <script src="assets/vendors/odometer/odometer.min.js"></script>
+
     <script src="assets/vendors/swiper/swiper.min.js"></script>
+
     <script src="assets/vendors/tiny-slider/tiny-slider.min.js"></script>
+
     <script src="assets/vendors/wnumb/wNumb.min.js"></script>
+
     <script src="assets/vendors/wow/wow.js"></script>
+
     <script src="assets/vendors/isotope/isotope.js"></script>
+
     <script src="assets/vendors/countdown/countdown.min.js"></script>
+
     <script src="assets/vendors/owl-carousel/owl.carousel.min.js"></script>
+
     <script src="assets/vendors/bxslider/jquery.bxslider.min.js"></script>
+
     <script src="assets/vendors/bootstrap-select/js/bootstrap-select.min.js"></script>
+
     <script src="assets/vendors/vegas/vegas.min.js"></script>
+
     <script src="assets/vendors/jquery-ui/jquery-ui.js"></script>
+
     <script src="assets/vendors/timepicker/timePicker.js"></script>
+
     <script src="assets/vendors/circleType/jquery.circleType.js"></script>
+
     <script src="assets/vendors/circleType/jquery.lettering.min.js"></script>
+
     <script src="assets/vendors/nice-select/jquery.nice-select.min.js"></script>
 
 
+    <!-- Template -->
 
-
-    <!-- template js -->
     <script src="assets/js/alipes.js"></script>
+
+
+    <!-- Excelsior -->
+
     <script src="assets/js/precios.js"></script>
+
     <script src="assets/js/cotizador.js"></script>
+
+
 </body>
 
 </html>
