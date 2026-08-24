@@ -1,150 +1,815 @@
-/*====================================
-        DATOS DEL PROYECTO
-====================================*/
+/* =========================================================
+   EXCELSIOR CANA RESIDENCES
+   COTIZADOR DE APARTAMENTOS
+========================================================= */
 
-const apartamentos = {
 
-    tipo1:{
+/* =========================================================
+   DATOS REALES
+========================================================= */
 
-        nombre:"Tipo 1",
+const unidadesExcelsior = [
 
-        area:"98 m²",
+    /* =========================
+       TIPO A
+    ========================== */
 
-        habitaciones:2,
-
-        precio:287189
-
+    {
+        id: "A-101",
+        modulo: "A",
+        tipo: "A",
+        nivel: 1,
+        area: "81.67 m²",
+        habitaciones: 2,
+        banos: "2.5",
+        parqueo: 1,
+        extra: "Patio trasero de 30.96 m²",
+        precio: "US$206,283.50",
+        estado: "Disponible"
     },
 
-    tipo2:{
-
-        nombre:"Tipo 2",
-
-        area:"120 m²",
-
-        habitaciones:3,
-
-        precio:325000
-
+    {
+        id: "A-201",
+        modulo: "A",
+        tipo: "A",
+        nivel: 2,
+        area: "81.67 m²",
+        habitaciones: 2,
+        banos: "3",
+        parqueo: 1,
+        extra: "Terraza de 77.06 m² + ½ baño + depósito",
+        precio: "US$215,503.50",
+        estado: "Disponible"
     },
 
-    tipo3:{
+    {
+        id: "B-101",
+        modulo: "B",
+        tipo: "A",
+        nivel: 1,
+        area: "81.67 m²",
+        habitaciones: 2,
+        banos: "2.5",
+        parqueo: 1,
+        extra: "Patio trasero de 36.87 m²",
+        precio: "US$207,465.50",
+        estado: "Disponible"
+    },
 
-        nombre:"Tipo 3",
+    {
+        id: "B-201",
+        modulo: "B",
+        tipo: "A",
+        nivel: 2,
+        area: "81.67 m²",
+        habitaciones: 2,
+        banos: "3",
+        parqueo: 1,
+        extra: "Terraza de 77.06 m² + ½ baño + depósito",
+        precio: "US$215,503.50",
+        estado: "Disponible"
+    },
 
-        area:"156 m²",
 
-        habitaciones:3,
+    /* =========================
+       TIPO B
+    ========================== */
 
-        precio:398500
+    {
+        id: "A-102",
+        modulo: "A",
+        tipo: "B",
+        nivel: 1,
+        area: "80.49 m²",
+        habitaciones: 1,
+        banos: "2",
+        parqueo: 1,
+        extra: "Estudio + patio trasero de 50.22 m²",
+        precio: "US$207,244.50",
+        estado: "Disponible"
+    },
 
+    {
+        id: "A-105",
+        modulo: "A",
+        tipo: "B",
+        nivel: 1,
+        area: "80.49 m²",
+        habitaciones: 1,
+        banos: "2",
+        parqueo: 1,
+        extra: "Estudio + patio trasero de 72.88 m²",
+        precio: "US$211,776.50",
+        estado: "Disponible"
+    },
+
+    {
+        id: "A-202",
+        modulo: "A",
+        tipo: "B",
+        nivel: 2,
+        area: "80.49 m²",
+        habitaciones: 1,
+        banos: "2.5",
+        parqueo: 1,
+        extra: "Estudio + terraza de 76.72 m² + ½ baño + depósito",
+        precio: "US$212,544.50",
+        estado: "Disponible"
+    },
+
+    {
+        id: "A-205",
+        modulo: "A",
+        tipo: "B",
+        nivel: 2,
+        area: "80.49 m²",
+        habitaciones: 1,
+        banos: "2.5",
+        parqueo: 1,
+        extra: "Estudio + terraza de 76.72 m² + ½ baño + depósito",
+        precio: "US$212,544.50",
+        estado: "Disponible"
+    },
+
+    {
+        id: "B-102",
+        modulo: "B",
+        tipo: "B",
+        nivel: 1,
+        area: "80.49 m²",
+        habitaciones: 1,
+        banos: "2",
+        parqueo: 1,
+        extra: "Estudio + patio trasero de 30.97 m²",
+        precio: "US$203,394.50",
+        estado: "Disponible"
+    },
+
+    {
+        id: "B-105",
+        modulo: "B",
+        tipo: "B",
+        nivel: 1,
+        area: "80.49 m²",
+        habitaciones: 1,
+        banos: "2",
+        parqueo: 1,
+        extra: "Estudio + patio trasero de 114.22 m²",
+        precio: "US$220,044.50",
+        estado: "Disponible"
+    },
+
+    {
+        id: "B-202",
+        modulo: "B",
+        tipo: "B",
+        nivel: 2,
+        area: "80.49 m²",
+        habitaciones: 1,
+        banos: "2.5",
+        parqueo: 1,
+        extra: "Estudio + terraza de 76.72 m² + ½ baño + depósito",
+        precio: "US$212,544.50",
+        estado: "Disponible"
+    },
+
+    {
+        id: "B-205",
+        modulo: "B",
+        tipo: "B",
+        nivel: 2,
+        area: "80.49 m²",
+        habitaciones: 1,
+        banos: "2.5",
+        parqueo: 1,
+        extra: "Estudio + terraza de 76.72 m² + ½ baño + depósito",
+        precio: "US$212,544.50",
+        estado: "Disponible"
+    },
+
+
+    /* =========================
+       TIPO C
+    ========================== */
+
+    {
+        id: "A-103",
+        modulo: "A",
+        tipo: "C",
+        nivel: 1,
+        area: "56.50 m²",
+        habitaciones: 1,
+        banos: "1",
+        parqueo: 1,
+        extra: "Patio trasero de 41.06 m²",
+        precio: "US$152,287.00",
+        estado: "Disponible"
+    },
+
+    {
+        id: "A-104",
+        modulo: "A",
+        tipo: "C",
+        nivel: 1,
+        area: "56.50 m²",
+        habitaciones: 1,
+        banos: "1",
+        parqueo: 1,
+        extra: "Patio trasero de 34.29 m²",
+        precio: "US$150,933.00",
+        estado: "Disponible"
+    },
+
+    {
+        id: "A-203",
+        modulo: "A",
+        tipo: "C",
+        nivel: 2,
+        area: "56.50 m²",
+        habitaciones: 1,
+        banos: "1",
+        parqueo: 1,
+        extra: "Distribución interior de 56.50 m²",
+        precio: "US$149,725.00",
+        estado: "Disponible"
+    },
+
+    {
+        id: "A-204",
+        modulo: "A",
+        tipo: "C",
+        nivel: 2,
+        area: "56.50 m²",
+        habitaciones: 1,
+        banos: "1",
+        parqueo: 1,
+        extra: "Distribución interior de 56.50 m²",
+        precio: "US$149,725.00",
+        estado: "Disponible"
+    },
+
+    {
+        id: "B-103",
+        modulo: "B",
+        tipo: "C",
+        nivel: 1,
+        area: "56.50 m²",
+        habitaciones: 1,
+        banos: "1",
+        parqueo: 1,
+        extra: "Patio trasero de 35.71 m²",
+        precio: "US$151,217.00",
+        estado: "Disponible"
+    },
+
+    {
+        id: "B-104",
+        modulo: "B",
+        tipo: "C",
+        nivel: 1,
+        area: "56.50 m²",
+        habitaciones: 1,
+        banos: "1",
+        parqueo: 1,
+        extra: "Patio trasero de 46.50 m²",
+        precio: "US$153,375.00",
+        estado: "Disponible"
+    },
+
+    {
+        id: "B-203",
+        modulo: "B",
+        tipo: "C",
+        nivel: 2,
+        area: "56.50 m²",
+        habitaciones: 1,
+        banos: "1",
+        parqueo: 1,
+        extra: "Distribución interior de 56.50 m²",
+        precio: "US$149,725.00",
+        estado: "Disponible"
+    },
+
+    {
+        id: "B-204",
+        modulo: "B",
+        tipo: "C",
+        nivel: 2,
+        area: "56.50 m²",
+        habitaciones: 1,
+        banos: "1",
+        parqueo: 1,
+        extra: "Distribución interior de 56.50 m²",
+        precio: "US$149,725.00",
+        estado: "Disponible"
+    },
+
+
+    /* =========================
+       TIPO D
+    ========================== */
+
+    {
+        id: "A-106",
+        modulo: "A",
+        tipo: "D",
+        nivel: 1,
+        area: "81.67 m²",
+        habitaciones: 1,
+        banos: "2.5",
+        parqueo: 1,
+        extra: "Estudio + patio trasero de 29.29 m²",
+        precio: "US$205,949.50",
+        estado: "Disponible"
+    },
+
+    {
+        id: "A-206",
+        modulo: "A",
+        tipo: "D",
+        nivel: 2,
+        area: "81.67 m²",
+        habitaciones: 1,
+        banos: "3",
+        parqueo: 1,
+        extra: "Estudio + terraza de 77.06 m² + ½ baño + depósito",
+        precio: "US$215,503.50",
+        estado: "Disponible"
+    },
+
+    {
+        id: "B-106",
+        modulo: "B",
+        tipo: "D",
+        nivel: 1,
+        area: "81.67 m²",
+        habitaciones: 1,
+        banos: "2.5",
+        parqueo: 1,
+        extra: "Estudio + patio trasero de 30.26 m²",
+        precio: "US$206,143.50",
+        estado: "Disponible"
+    },
+
+    {
+        id: "B-206",
+        modulo: "B",
+        tipo: "D",
+        nivel: 2,
+        area: "81.67 m²",
+        habitaciones: 1,
+        banos: "3",
+        parqueo: 1,
+        extra: "Estudio + terraza de 77.06 m² + ½ baño + depósito",
+        precio: "US$215,503.50",
+        estado: "Disponible"
     }
 
-};
+];
 
 
-/*====================================
-        VARIABLES
-====================================*/
+/* =========================================================
+   ESTADO
+========================================================= */
 
-const tarjetas=document.querySelectorAll(".type-card");
+let moduloActivo = "A";
+let tipoActivo = "A";
 
-const precio=document.getElementById("price");
+
+/* =========================================================
+   ELEMENTOS
+========================================================= */
+
+const moduleButtons =
+    document.querySelectorAll(".module-option");
+
+const typeButtons =
+    document.querySelectorAll(".quote-type");
+
+const apartmentSelect =
+    document.getElementById("quoteApartmentSelect");
+
+const apartmentName =
+    document.getElementById("quoteApartmentName");
+
+const area =
+    document.getElementById("quoteArea");
+
+const level =
+    document.getElementById("quoteLevel");
+
+const bedrooms =
+    document.getElementById("quoteBedrooms");
+
+const bathrooms =
+    document.getElementById("quoteBathrooms");
+
+const parking =
+    document.getElementById("quoteParking");
+
+const type =
+    document.getElementById("quoteType");
+
+const extra =
+    document.getElementById("quoteExtra");
+
+const availability =
+    document.getElementById("quoteAvailability");
+
+const price =
+    document.getElementById("quotePrice");
 
 
-/*====================================
-      FORMATO MONEDA
-====================================*/
+/* =========================================================
+   FILTRAR UNIDADES
+========================================================= */
 
-function formatoUSD(valor){
+function obtenerUnidadesDisponibles() {
 
-    return "USD$ " + valor.toLocaleString("en-US");
+    return unidadesExcelsior.filter(
+        unidad =>
+            unidad.modulo === moduloActivo &&
+            unidad.tipo === tipoActivo
+    );
 
 }
 
 
-/*====================================
-      CAMBIAR TARJETA
-====================================*/
+/* =========================================================
+   ACTUALIZAR SELECT
+========================================================= */
 
-tarjetas.forEach(card=>{
+function actualizarApartamentos() {
 
-    card.addEventListener("click",()=>{
+    const unidades =
+        obtenerUnidadesDisponibles();
 
-        tarjetas.forEach(c=>{
 
-            c.classList.remove("active");
+    /* =========================================
+       DESTRUIR NICE SELECT ACTUAL
+    ========================================== */
 
-        });
+    if (
+        window.jQuery &&
+        typeof jQuery.fn.niceSelect === "function"
+    ) {
 
-        card.classList.add("active");
+        try {
 
-        const tipo=card.dataset.type;
+            jQuery("#quoteApartmentSelect")
+                .niceSelect("destroy");
 
-        precio.innerHTML=formatoUSD(
+        } catch (error) {
 
-            apartamentos[tipo].precio
+            console.log(
+                "Nice Select todavía no estaba inicializado."
+            );
 
+        }
+
+    }
+
+
+    /* =========================================
+       LIMPIAR SELECT
+    ========================================== */
+
+    apartmentSelect.innerHTML = "";
+
+
+    /* =========================================
+       AGREGAR APARTAMENTOS
+    ========================================== */
+
+    unidades.forEach(unidad => {
+
+        const option =
+            document.createElement("option");
+
+        option.value =
+            unidad.id;
+
+        option.textContent =
+            `${unidad.id} · ${
+                unidad.nivel === 1
+                    ? "1er nivel"
+                    : "2do nivel"
+            }`;
+
+        apartmentSelect.appendChild(option);
+
+    });
+
+
+    /* =========================================
+       SELECCIONAR PRIMER APARTAMENTO
+    ========================================== */
+
+    if (unidades.length > 0) {
+
+        apartmentSelect.value =
+            unidades[0].id;
+
+        actualizarResultado(
+            unidades[0]
         );
 
-    });
-
-});
+    }
 
 
-/*====================================
-        TORRES
-====================================*/
+    /* =========================================
+       VOLVER A CREAR NICE SELECT
+    ========================================== */
 
-const torres=document.querySelectorAll(".tower-card");
+    if (
+        window.jQuery &&
+        typeof jQuery.fn.niceSelect === "function"
+    ) {
 
-torres.forEach(card=>{
+        jQuery("#quoteApartmentSelect")
+            .niceSelect();
 
-    card.addEventListener("click",()=>{
+    }
 
-        torres.forEach(c=>{
-
-            c.classList.remove("active");
-
-        });
-
-        card.classList.add("active");
-
-    });
-
-});
+}
 
 
-/*====================================
-      BOTON COTIZAR
-====================================*/
+/* =========================================================
+   ACTUALIZAR RESULTADO
+========================================================= */
 
-const boton=document.querySelector(".quote-btn");
+function actualizarResultado(unidad) {
 
-boton.addEventListener("click",()=>{
+    apartmentName.textContent =
+        unidad.id;
 
-    const torre=document.querySelector(".tower-card.active h4").innerText;
+    area.textContent =
+        unidad.area;
 
-    const tipo=document.querySelector(".type-card.active h5").innerText;
+    level.textContent =
+        unidad.nivel === 1
+            ? "1er nivel"
+            : "2do nivel";
 
-    const piso=document.getElementById("floorSelect").value;
+    bedrooms.textContent =
+        unidad.habitaciones;
 
-    const apartamento=document.getElementById("apartmentSelect").value;
+    bathrooms.textContent =
+        unidad.banos;
 
-    alert(
+    parking.textContent =
+        unidad.parqueo;
 
-`Solicitud enviada
+    type.textContent =
+        unidad.tipo;
 
-${torre}
+    extra.textContent =
+        unidad.extra;
 
-${tipo}
+    availability.textContent =
+        unidad.estado;
 
-Piso ${piso}
 
-Apartamento ${apartamento}
+    actualizarPrecio(unidad);
 
-Precio ${precio.innerText}`
+}
 
+
+/* =========================================================
+   ACTUALIZAR PRECIO
+========================================================= */
+
+function actualizarPrecio(unidad) {
+
+    /*
+     * Guardamos los datos reales del apartamento
+     */
+
+    price.dataset.precio =
+        unidad.precio;
+
+    price.dataset.apartamento =
+        unidad.id;
+
+
+    /*
+     * Comprobar si el usuario ya se registró
+     */
+
+    const desbloqueado =
+        localStorage.getItem(
+            "preciosDesbloqueados"
+        ) === "true";
+
+
+    if (desbloqueado) {
+
+        price.textContent =
+            unidad.precio;
+
+        price.classList.remove(
+            "precio-bloqueado"
+        );
+
+        price.classList.add(
+            "precio-desbloqueado"
+        );
+
+        price.onclick = null;
+
+        price.style.cursor =
+            "default";
+
+    }
+
+    else {
+
+        price.innerHTML =
+            '<i class="fa fa-lock"></i> Ver precio';
+
+        price.classList.add(
+            "precio-bloqueado"
+        );
+
+        price.classList.remove(
+            "precio-desbloqueado"
+        );
+
+        price.style.cursor =
+            "pointer";
+
+
+        price.onclick =
+            function () {
+
+                abrirRegistroPrecio(
+                    price
+                );
+
+            };
+
+    }
+
+}
+
+
+/* =========================================================
+   CAMBIAR MÓDULO
+========================================================= */
+
+moduleButtons.forEach(button => {
+
+    button.addEventListener(
+        "click",
+        function () {
+
+            moduleButtons.forEach(
+                btn => {
+
+                    btn.classList.remove(
+                        "active"
+                    );
+
+                }
+            );
+
+
+            this.classList.add(
+                "active"
+            );
+
+
+            moduloActivo =
+                this.dataset.module;
+
+
+            actualizarApartamentos();
+
+        }
     );
 
 });
+
+
+/* =========================================================
+   CAMBIAR TIPO
+========================================================= */
+
+typeButtons.forEach(button => {
+
+    button.addEventListener(
+        "click",
+        function () {
+
+            typeButtons.forEach(
+                btn => {
+
+                    btn.classList.remove(
+                        "active"
+                    );
+
+                }
+            );
+
+
+            this.classList.add(
+                "active"
+            );
+
+
+            tipoActivo =
+                this.dataset.type;
+
+
+            actualizarApartamentos();
+
+        }
+    );
+
+});
+
+
+/* =========================================================
+   CAMBIAR APARTAMENTO
+========================================================= */
+
+function cambiarApartamentoSeleccionado() {
+
+    const apartamentoSeleccionado =
+        apartmentSelect.value;
+
+
+    const unidad =
+        unidadesExcelsior.find(
+            item =>
+                item.id === apartamentoSeleccionado
+        );
+
+
+    if (unidad) {
+
+        actualizarResultado(
+            unidad
+        );
+
+    }
+
+}
+
+
+/* =========================================================
+   EVENTO DEL SELECT
+========================================================= */
+
+/*
+ * Usamos delegación porque Nice Select se destruye
+ * y vuelve a crear cuando cambias módulo o tipo.
+ */
+
+if (window.jQuery) {
+
+    jQuery(document)
+
+        .off(
+            "change.cotizador",
+            "#quoteApartmentSelect"
+        )
+
+        .on(
+            "change.cotizador",
+            "#quoteApartmentSelect",
+            function () {
+
+                cambiarApartamentoSeleccionado();
+
+            }
+        );
+
+}
+
+else {
+
+    /*
+     * Fallback en caso de que jQuery no esté disponible.
+     */
+
+    apartmentSelect.addEventListener(
+        "change",
+        cambiarApartamentoSeleccionado
+    );
+
+}
+
+
+/* =========================================================
+   INICIAR COTIZADOR
+========================================================= */
+
+document.addEventListener(
+    "DOMContentLoaded",
+    function () {
+
+        actualizarApartamentos();
+
+    }
+);
