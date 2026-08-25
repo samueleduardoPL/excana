@@ -5,6 +5,23 @@
 
 let apartamentoConsultado = "";
 
+/* =========================================================
+   SUPABASE
+========================================================= */
+
+const SUPABASE_URL =
+    "https://qpzttxhmemtomectjwaq.supabase.co";
+
+const SUPABASE_KEY =
+    "sb_publishable_caTuviMm3RAFT7r4BuFTCA_pNwCKVWy";
+
+
+const supabaseClient =
+    supabase.createClient(
+        SUPABASE_URL,
+        SUPABASE_KEY
+    );
+
 
 /* =========================================================
    ABRIR MODAL
@@ -214,7 +231,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     if (formulario) {
 
-        formulario.addEventListener("submit", function (event) {
+        formulario.addEventListener("submit", async function (event) {
 
             event.preventDefault();
 
@@ -255,25 +272,39 @@ document.addEventListener("DOMContentLoaded", function () {
             }
 
 
-            /* =============================================
-               DATOS DEL INTERESADO
-
-               Aquí conectaremos Supabase después.
-            ============================================= */
-
             const lead = {
-
                 nombre: nombre,
                 email: email,
                 telefono: telefono,
                 cedula: cedula,
-                apartamento: apartamento,
-                fecha: new Date().toISOString()
-
+                apartamento: apartamento
             };
 
-            console.log("Nuevo lead Excana:", lead);
 
+            /* =================================================
+            GUARDAR EN SUPABASE
+            ================================================= */
+
+            const { error } =
+                await supabaseClient
+                    .from("leads")
+                    .insert([lead]);
+
+
+            if (error) {
+
+                console.error(
+                    "Error guardando lead:",
+                    error
+                );
+
+                alert(
+                    "No pudimos registrar tus datos. " +
+                    "Por favor intenta nuevamente."
+                );
+
+                return;
+}
 
             /* =============================================
                BUSCAR PRECIO CONSULTADO
