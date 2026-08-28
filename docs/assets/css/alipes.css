@@ -12561,3 +12561,41 @@ body.boxed-wrapper {
         font-size: 22px;
     }
 }
+
+
+
+/* Prueba */
+
+.contact-one__points {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.contact-one__points li {
+    flex: 1 1 280px;
+    min-width: 0;
+}
+
+.contact-one__points .content {
+    min-width: 0 !important;
+}
+
+.contact-one__points .content h4 {
+    margin: 0;
+}
+
+.contact-one__points .content h4 a {
+    display: inline-block;
+    max-width: 100%;
+}
+
+.contact-one__points li:first-child .content h4 a {
+    white-space: nowrap;
+}
+
+.contact-one__points li:last-child .content h4 a {
+    white-space: normal;
+    overflow-wrap: anywhere;
+    word-break: break-word;
+}
